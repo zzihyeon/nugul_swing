@@ -9,6 +9,7 @@ from pathlib import Path
 from typing import Sequence
 
 from .agents import SwingVotingEngine
+from .collectors import CollectionError, NaverFinanceCollector
 from .models import (
     AnalysisInput,
     DataSource,
@@ -37,12 +38,14 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser.add_argument("--input", type=Path, help="분석 입력 JSON 파일")
     parser.add_argument("--stock", help="종목명. 입력 JSON이 없을 때 샘플에 사용합니다.")
     parser.add_argument("--ticker", help="종목 코드")
+    parser.add_argument("--live", action="store_true", help="네이버 금융에서 실시간/일봉 데이터를 수집합니다.")
+    parser.add_argument("--daily-pages", type=int, default=8, help="수집할 네이버 일별 시세 페이지 수")
     parser.add_argument("--theme", help="테마 추종 Agent가 우선 추적할 테마명")
     parser.add_argument("--theme-file", type=Path, help="테마 주간 메모 파일")
     parser.add_argument("--json", action="store_true", help="결과를 JSON으로 출력")
     args = parser.parse_args(argv)
 
-    context = _load_context(args.input, args.stock, args.ticker)
+    context = _load_context(args.input, args.stock, args.ticker, args.live, args.daily_pages)
     if args.theme_file:
         context.theme_sector = build_theme_snapshot_from_file(
             args.theme_file,
@@ -53,6 +56,8 @@ def main(argv: Sequence[str] | None = None) -> int:
             stock_name=context.stock_name,
             target_theme=args.theme,
         )
+        if context.theme_sector.themes and context.yang_eum_yang.has_theme_or_momentum is None:
+            context.yang_eum_yang.has_theme_or_momentum = True
 
     decision = SwingVotingEngine().evaluate(context)
     if args.json:
@@ -66,10 +71,23 @@ def _load_context(
     input_path: Path | None,
     stock_name: str | None,
     ticker: str | None,
+    live: bool,
+    daily_pages: int,
 ) -> AnalysisInput:
     if input_path:
         data = json.loads(input_path.read_text(encoding="utf-8-sig"))
         return AnalysisInput.from_dict(data)
+    if live:
+        if not ticker:
+            raise SystemExit("--live requires --ticker")
+        try:
+            return NaverFinanceCollector().build_analysis_input(
+                ticker=ticker,
+                stock_name=stock_name,
+                daily_pages=daily_pages,
+            )
+        except CollectionError as exc:
+            raise SystemExit(f"live collection failed: {exc}") from exc
     return _sample_context(stock_name or "샘플종목", ticker)
 
 

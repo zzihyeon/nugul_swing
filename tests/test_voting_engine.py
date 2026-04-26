@@ -187,6 +187,19 @@ NEW!탈 플라스틱 - 한두번 들썩일 수 있음
         self.assertEqual(vote.signal.value, "bearish")
         self.assertEqual(vote.score, -2)
 
+    def test_observe_timing_downgrades_otherwise_bullish_entry(self):
+        context = bullish_context()
+        context.execution.entry_mode = "관망"
+        context.execution.pullback_ready = False
+        context.execution.price_vs_support_pct = 18
+        context.execution.price_vs_resistance_pct = 10
+
+        decision = SwingVotingEngine().evaluate(context)
+        vote = next(vote for vote in decision.votes if vote.agent == "Execution Timing Agent")
+
+        self.assertEqual(vote.signal.value, "bearish")
+        self.assertEqual(decision.decision, Decision.WAIT)
+
 
 if __name__ == "__main__":
     unittest.main()

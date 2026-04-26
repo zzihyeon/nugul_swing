@@ -25,6 +25,12 @@
 python -m stock_swing_agents.cli --stock "세림B&G"
 ```
 
+네이버 금융에서 실시간 quote와 일별 OHLCV를 수집해 실행:
+
+```powershell
+python -m stock_swing_agents.cli --live --ticker 340440 --stock "세림B&G" --theme "탈 플라스틱" --theme-file "C:\Users\guswl\OneDrive\문서\gpt\theme_week_2026_W18_2th.txt" --json
+```
+
 JSON 입력으로 실행:
 
 ```powershell
@@ -64,8 +70,14 @@ python -m stock_swing_agents.cli --input examples/sample_snapshot.json --json
 권장 출처:
 
 - 실시간/이벤트: Investing.com Economic Calendar
-- 한국 시장 시세/수급: KRX 정보데이터시스템
+- 한국 시장 시세/수급: KRX 정보데이터시스템, Naver Finance
 - 공시/재무: OpenDART
+
+## 실시간 수집기
+
+`NaverFinanceCollector`는 네이버 금융의 실시간 quote와 일별 시세 페이지를 읽어 `AnalysisInput`을 생성합니다. 자동 채움 범위는 가격, 거래량, 거래대금 일부, 이동평균, RSI, MACD, 지지/저항, 변동성, 실행 위치, 양음양 조건입니다.
+
+수급, 공시, 투자주의/거래정지 여부는 아직 자동 수집하지 않습니다. 해당 값은 API 키 또는 별도 KRX/DART 연동이 필요하므로 JSON 입력으로 보강합니다.
 
 ## 테스트
 

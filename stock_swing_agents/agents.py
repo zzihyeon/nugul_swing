@@ -461,6 +461,9 @@ class ExecutionTimingAgent:
             evidence.append("돌파 확인 조건이 있습니다.")
         if data.entry_mode:
             evidence.append(f"실행 모드: {data.entry_mode}")
+            if data.entry_mode == "관망":
+                raw_score -= 1
+                risks.append("실행 타이밍이 관망으로 분류됐습니다.")
 
         if data.price_vs_support_pct is not None:
             if 0 <= data.price_vs_support_pct <= 5:
