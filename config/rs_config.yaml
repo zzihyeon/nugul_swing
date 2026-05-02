@@ -1,0 +1,5 @@
+benchmark_default: "KOSPI_KOSDAQ_BY_LISTING"
+rs_windows: [5, 10, 20, 60]
+rs_top_n: 100
+primary_sort: "rs_percentile"
+secondary_sort: "raw_vote_score"

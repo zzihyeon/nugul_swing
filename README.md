@@ -1,86 +1,105 @@
-# Stock Swing Agents
+# Multi-Agent Stock Picker
 
-한국 주식 스윙 매매를 위한 Agent voting 보조 엔진입니다. 자동매매가 아니라, 실시간/준실시간으로 확인한 데이터와 공시/테마 정보를 같은 형식으로 넣고 `진입 가능 / 대기 / 관망 / 금지` 판단을 내리도록 설계했습니다.
+한국 주식 스윙/단타 후보를 RS 우선순위로 정렬하고 9개 Agent가 독립 평가한 뒤, Health veto와 Voting을 반영해 한국어 리포트와 JSON을 함께 생성하는 시스템입니다.
 
-## 구성
+초기 버전은 외부 API 없이 mock provider로 end-to-end 실행됩니다. 실제 가격, 뉴스, 공시, 수급 API는 `src/data_providers`의 Provider 인터페이스를 교체해 붙이면 됩니다.
 
-- `Market Data Agent`: 가격, 거래량, 거래대금, 지수, 환율 흐름
-- `Technical Signal Agent`: 추세, 이동평균, RSI, MACD, 지지/저항
-- `Supply/Demand Agent`: 외국인, 기관, 개인, 프로그램 수급
-- `News/Disclosure Agent`: 뉴스, 경제 이벤트, DART 공시 위험
-- `Theme/Sector Agent`: 주도 테마, 대장주 여부, 테마 반복성
-- `Theme Following Agent`: 테마 파일 기반 최근성, 반복성, 상승/하락성, 추종 후보군
-- `Yang-Eum-Yang Agent`: 양봉-음봉-양봉 눌림 패턴, 음봉 거래량 60% 이하, 5일선/10일선 지지 여부
-- `Risk Guard Agent`: 손절, 변동성, 거래정지/투자주의/악성 공시 리스크
-- `Execution Timing Agent`: 지금 진입, 눌림 대기, 분할 진입 조건
-- `Post-Trade Review Agent`: 최근 매매 원칙 준수와 복기 기록
-
-`Risk Guard Agent`가 `block`을 내면 최종 판단은 항상 `금지`입니다.
-
-## 사용법
-
-샘플 데이터로 실행:
+## 실행
 
 ```powershell
-python -m stock_swing_agents.cli --stock "세림B&G"
+cd stock_picker_agents
+python -m src.main --universe kospi_kosdaq --top-n 10 --realtime
 ```
 
-네이버 금융에서 실시간 quote와 일별 OHLCV를 수집해 실행:
+특정 종목만 실행:
 
 ```powershell
-python -m stock_swing_agents.cli --live --ticker 340440 --stock "세림B&G" --theme "탈 플라스틱" --theme-file "C:\Users\guswl\OneDrive\문서\gpt\theme_week_2026_W18_2th.txt" --json
+python -m src.main --tickers 000660,005930,010120 --top-n 5 --refresh
 ```
 
-JSON 입력으로 실행:
+JSON 파일 저장:
 
 ```powershell
-python -m stock_swing_agents.cli --input examples/sample_snapshot.json
+python -m src.main --universe kosdaq150 --market-cap-min 300000000000 --rs-top-n 100 --output-json data/cache/latest_result.json
 ```
 
-테마 파일을 같이 반영:
+SQLite cache warm-up with external Naver provider:
 
 ```powershell
-python -m stock_swing_agents.cli --input examples/sample_snapshot.json --theme-file "C:\Users\guswl\OneDrive\문서\gpt\theme_week_2026_W18_2th.txt"
+python -m src.main --provider naver --universe kospi_kosdaq --universe-limit 100 --top-n 20 --realtime --cache-db data/cache/stock_picker.sqlite3 --warm-cache --output-json data/cache/latest_result.json
 ```
 
-특정 테마를 우선 추종:
+Run from SQLite cache only, without API calls:
 
 ```powershell
-python -m stock_swing_agents.cli --stock "세림B&G" --theme "탈 플라스틱" --theme-file "C:\Users\guswl\OneDrive\문서\gpt\theme_week_2026_W18_2th.txt"
+python -m src.main --provider naver --universe kospi_kosdaq --universe-limit 100 --top-n 20 --cache-db data/cache/stock_picker.sqlite3 --cache-only
 ```
 
-JSON 결과 출력:
+Use cache first when it is fresh, and call API only when missing or stale:
 
 ```powershell
-python -m stock_swing_agents.cli --input examples/sample_snapshot.json --json
+python -m src.main --provider naver --universe kospi_kosdaq --universe-limit 100 --top-n 20 --cache-db data/cache/stock_picker.sqlite3 --cache-ttl-minutes 15
 ```
 
-## 입력 원칙
+Use SQLite as the base store, compare each ticker's last cached OHLCV date with the latest market index date, and refresh only missing ticker contexts:
 
-가격/수급/이벤트 데이터는 실행 직전에 확인한 값을 넣습니다. 각 데이터에는 가능한 한 `sources`를 포함해 출처, 조회시각, 지연 여부를 보존합니다.
+```powershell
+python -m src.main --provider naver --universe kospi_kosdaq --universe-limit 700 --top-n 20 --cache-db data/cache/stock_picker.sqlite3 --incremental-cache
+```
 
-`yang_eum_yang` 입력은 PDF의 양음양 조건을 구조화한 값입니다.
+Keep a collector running to refresh SQLite periodically:
 
-- `pattern`: `pattern1`, `pattern2`, `pattern3`
-- `first_candle_gain_pct`: 첫 장대양봉 상승률. 기본 유효 구간은 5~20%
-- `pullback_volume_pct_of_first`: 음봉/눌림 거래량이 첫 양봉 거래량 대비 몇 %인지. Pattern 1은 60% 이하를 우호적으로 봅니다.
-- `pullback_holds_ma5`, `current_above_short_ma`, `short_ma_distance_pct`: 5일선/10일선 등 단기 이평선 지지와 거리
-- `pullback_low_broken`, `short_ma_broken`, `opening_volume_spike`: 발생 시 감점되는 위험 조건
+```powershell
+python -m src.main --provider naver --universe kospi_kosdaq --universe-limit 100 --cache-db data/cache/stock_picker.sqlite3 --collector-loop --collector-interval-minutes 15
+```
 
-권장 출처:
+리포트만 생략하고 JSON 중심 출력:
 
-- 실시간/이벤트: Investing.com Economic Calendar
-- 한국 시장 시세/수급: KRX 정보데이터시스템, Naver Finance
-- 공시/재무: OpenDART
+```powershell
+python -m src.main --tickers 000660,010120 --include-report false
+```
 
-## 실시간 수집기
+## 파이프라인
 
-`NaverFinanceCollector`는 네이버 금융의 실시간 quote와 일별 시세 페이지를 읽어 `AnalysisInput`을 생성합니다. 자동 채움 범위는 가격, 거래량, 거래대금 일부, 이동평균, RSI, MACD, 지지/저항, 변동성, 실행 위치, 양음양 조건입니다.
+1. Universe 생성 및 시가총액 3,000억 원 필터
+2. 가격, 거래량, 거래대금, 시총, 뉴스, 수급, 공시 최신화
+3. RS Agent가 시장 대비 상대강도로 1차 정렬
+4. RS 상위 후보를 9개 Agent가 독립 평가
+5. Voting Engine이 RS bucket 우선 정렬, Health veto, confidence 보정을 적용
+6. 한국어 Markdown 리포트와 machine-readable JSON 출력
 
-수급, 공시, 투자주의/거래정지 여부는 아직 자동 수집하지 않습니다. 해당 값은 API 키 또는 별도 KRX/DART 연동이 필요하므로 JSON 입력으로 보강합니다.
+## Agent
+
+- `RS Agent`: 시장/섹터 대비 상대강도와 RS 순위
+- `Theme Agent`: 테마 강도, 확산 단계, 대장주 여부
+- `Health Agent`: 재무, 유동성, 공시, 관리/거래정지/투자경고 veto
+- `Trader Agent`: 분할매수, 분할매도, 손절, 무효화 조건
+- `Breakout Agent`: 박스권/전고점/신고가 돌파 가능성
+- `Pullback Agent`: 5/10/20일선 눌림, 거래량 감소, 양음양 후보
+- `Scalping Agent`: 당일 거래대금, VWAP, 변동성, 뉴스 반응
+- `Volume Flow Agent`: 거래량 증가율, 거래대금, 외국인/기관/프로그램 수급
+- `Custom Document Agent`: `data/custom_docs/yyang_eum_yyang.pdf` 기반 양음양 규칙 평가
+
+## 설정
+
+핵심 기준은 모두 `config/*.yaml`에서 수정합니다.
+
+- `market_cap_filter.yaml`: 시가총액 기준과 unknown 처리
+- `rs_config.yaml`: RS window, benchmark, RS top N
+- `agent_weights.yaml`: Agent별 voting weight
+- `risk_rules.yaml`: veto 및 위험 감점 규칙
+- `yyang_eum_yyang_rules.yaml`: 양음양 pattern rule
+- `realtime_config.yaml`: 장중/장마감 stale 기준
 
 ## 테스트
 
 ```powershell
+cd stock_picker_agents
 python -m unittest discover -s tests
 ```
+
+테스트는 시총 필터, RS 우선 정렬, RS bucket 내 Voting 정렬, Health veto, stale 판단, 양음양 Pattern 1/2/3, 문서 규칙 추출, 전체 mock 실행을 검증합니다.
+
+## 주의
+
+이 프로젝트는 매매 의사결정을 보조하는 분석 엔진입니다. 자동매매 주문 기능은 포함하지 않으며, 실거래 전에는 실제 데이터 Provider와 체결/호가/공시 검증을 별도로 붙여야 합니다.

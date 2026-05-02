@@ -1,0 +1,13 @@
+veto_market_cap_below_min: true
+veto_trading_halt: true
+veto_administrative_issue: true
+veto_delisting_risk: true
+veto_audit_opinion_issue: true
+veto_investment_warning: true
+veto_severe_disclosure: true
+veto_extreme_liquidity_shortage: true
+veto_missing_stop_loss: true
+low_turnover_krw: 500000000
+extreme_low_turnover_krw: 100000000
+recent_bad_disclosure_keywords: ["상장폐지", "감사의견거절", "거래정지", "불성실공시", "대규모 유상증자", "CB 발행"]
+cb_bw_risk_keywords: ["전환사채", "신주인수권부사채", "CB", "BW"]

@@ -1,13 +1,21 @@
 [project]
-name = "stock-swing-agents"
+name = "stock-picker-agents"
 version = "0.1.0"
-description = "Korean stock swing-trading assistant agent voting engine."
+description = "RS-first multi-agent Korean stock swing/day-trade picker."
 requires-python = ">=3.11"
 dependencies = []
 
 [project.scripts]
-swing-agents = "stock_swing_agents.cli:main"
+stock-picker-agents = "src.main:main"
 
 [tool.setuptools]
-packages = ["stock_swing_agents"]
-
+packages = [
+  "src",
+  "src.agents",
+  "src.data_providers",
+  "src.models",
+  "src.report",
+  "src.strategy_docs",
+  "src.utils",
+  "src.voting",
+]

@@ -1,0 +1,7 @@
+default:
+  kospi: "KOSPI"
+  kosdaq: "KOSDAQ"
+universe_benchmark:
+  kospi_kosdaq: "KOSPI_KOSDAQ_BY_LISTING"
+  kospi200: "KOSPI"
+  kosdaq150: "KOSDAQ"

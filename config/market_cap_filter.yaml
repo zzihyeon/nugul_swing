@@ -1,0 +1,3 @@
+market_cap_min_krw: 300000000000
+exclude_unknown_market_cap: true
+allow_unknown_market_cap: false

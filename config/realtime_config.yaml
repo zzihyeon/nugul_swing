@@ -1,0 +1,5 @@
+market_open_stale_minutes: 15
+market_closed_stale_hours: 24
+require_fetched_at_kst: true
+refresh_on_request: true
+historical_ohlcv_days: 1095

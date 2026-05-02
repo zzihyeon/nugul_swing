@@ -6,7 +6,7 @@ __pycache__/
 build/
 dist/
 *.egg-info/
-nugul_swing/
-nugul_swing_publish/
-nugul_swing_publish_gitdir/
-write-test.tmp
+data/cache/*
+!data/cache/.gitkeep
+!data/cache/sample_report.md
+!data/cache/sample_result.json

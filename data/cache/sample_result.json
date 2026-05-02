@@ -1,0 +1,3165 @@
+{
+  "date": "2026-05-02",
+  "requested_at_kst": "2026-05-02T01:24:00+09:00",
+  "data_fetched_at_kst": "2026-05-02T01:24:00+09:00",
+  "realtime_refresh": true,
+  "market_context": "mock provider / benchmark=KOSPI_KOSDAQ_BY_LISTING",
+  "filters": {
+    "market_cap_min_krw": 300000000000,
+    "passed_count": 8,
+    "excluded_by_market_cap_count": 1
+  },
+  "recommendations": [
+    {
+      "ticker": "000660",
+      "name": "SK하이닉스",
+      "market_cap_krw": 145000000000000,
+      "rs_rank": 2,
+      "rs_percentile": 85.71,
+      "rs_bucket": "RS 상위 20%",
+      "raw_vote_score": 71.9,
+      "final_grade": "Buy Candidate",
+      "primary_reason": "KOSPI 대비 RS 5/10/20일이 2.59/4.41/7.08%p입니다. / 주요 테마: HBM",
+      "top_agents": [
+        "rs_agent",
+        "health_agent",
+        "theme_agent"
+      ],
+      "weak_agents": [
+        "custom_doc_agent"
+      ],
+      "themes": [
+        "HBM",
+        "반도체",
+        "AI 인프라"
+      ],
+      "yyang_eum_yyang_pattern": "none",
+      "trade_plan": {
+        "first_buy": "226,835.0원 부근 1차",
+        "second_buy": "225,086.0원 부근 2차",
+        "third_buy": "220,840.0원 부근 3차 또는 지지 확인 후",
+        "partial_sell_1": "242,753.0원 1차 분할매도",
+        "partial_sell_2": "252,000.0원 2차 분할매도",
+        "stop_loss": "217,527.36원 이탈",
+        "invalidation": "종가 기준 20일선 220,840.0원 이탈 또는 대량 음봉"
+      },
+      "risks": [
+        "손절선까지 거리가 커지면 비중 축소",
+        "문서 기반 전략 가점 없음"
+      ],
+      "evidence": [
+        {
+          "type": "ohlcv",
+          "source": "mock_price_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "benchmark",
+          "source": "mock_market_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "themes",
+          "source": "mock_theme_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "news",
+          "source": "mock_news_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "market_cap",
+          "source": "mock_market_cap_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "financials",
+          "source": "mock_financial_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "ohlcv",
+          "source": "mock_price_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "intraday",
+          "source": "mock_price_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "ohlcv",
+          "source": "mock_price_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "ohlcv",
+          "source": "mock_price_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "intraday",
+          "source": "mock_price_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "news",
+          "source": "mock_news_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        }
+      ],
+      "agent_scores": {
+        "rs_agent": 83.47,
+        "theme_agent": 99.0,
+        "health_agent": 82.0,
+        "trader_agent": 72.0,
+        "breakout_agent": 77.95,
+        "pullback_agent": 62.0,
+        "scalping_agent": 94.0,
+        "volume_flow_agent": 70.0,
+        "custom_doc_agent": 42.0
+      },
+      "veto_reasons": [],
+      "trade_type": "swing",
+      "pullback_type": "box_support",
+      "breakout_setup": "forming"
+    },
+    {
+      "ticker": "066570",
+      "name": "LG전자",
+      "market_cap_krw": 18000000000000,
+      "rs_rank": 3,
+      "rs_percentile": 71.43,
+      "rs_bucket": "RS 상위 30%",
+      "raw_vote_score": 64.2,
+      "final_grade": "Watchlist",
+      "primary_reason": "KOSPI 대비 RS 5/10/20일이 0.50/0.60/0.29%p입니다. / 주요 테마: 전장",
+      "top_agents": [
+        "health_agent",
+        "trader_agent"
+      ],
+      "weak_agents": [
+        "custom_doc_agent"
+      ],
+      "themes": [
+        "전장",
+        "가전",
+        "로봇"
+      ],
+      "yyang_eum_yyang_pattern": "none",
+      "trade_plan": {
+        "first_buy": "107,709.0원 부근 1차",
+        "second_buy": "107,662.0원 부근 2차",
+        "third_buy": "107,301.0원 부근 3차 또는 지지 확인 후",
+        "partial_sell_1": "114,112.0원 1차 분할매도",
+        "partial_sell_2": "118,459.0원 2차 분할매도",
+        "stop_loss": "105,691.56원 이탈",
+        "invalidation": "종가 기준 20일선 107,301.0원 이탈 또는 대량 음봉"
+      },
+      "risks": [
+        "문서 기반 전략 가점 없음"
+      ],
+      "evidence": [
+        {
+          "type": "ohlcv",
+          "source": "mock_price_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "benchmark",
+          "source": "mock_market_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "themes",
+          "source": "mock_theme_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "news",
+          "source": "mock_news_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "market_cap",
+          "source": "mock_market_cap_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "financials",
+          "source": "mock_financial_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "ohlcv",
+          "source": "mock_price_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "intraday",
+          "source": "mock_price_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "ohlcv",
+          "source": "mock_price_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "ohlcv",
+          "source": "mock_price_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "intraday",
+          "source": "mock_price_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "news",
+          "source": "mock_news_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        }
+      ],
+      "agent_scores": {
+        "rs_agent": 67.46,
+        "theme_agent": 61.0,
+        "health_agent": 82.0,
+        "trader_agent": 80.0,
+        "breakout_agent": 77.84,
+        "pullback_agent": 62.0,
+        "scalping_agent": 94.0,
+        "volume_flow_agent": 62.0,
+        "custom_doc_agent": 42.0
+      },
+      "veto_reasons": [],
+      "trade_type": "swing",
+      "pullback_type": "box_support",
+      "breakout_setup": "forming"
+    },
+    {
+      "ticker": "247540",
+      "name": "에코프로비엠",
+      "market_cap_krw": 11500000000000,
+      "rs_rank": 5,
+      "rs_percentile": 42.86,
+      "rs_bucket": "RS 하위 구간",
+      "raw_vote_score": 70.4,
+      "final_grade": "Weak Watch",
+      "primary_reason": "KOSDAQ 대비 RS 5/10/20일이 -0.05/0.14/0.50%p입니다. / 주요 테마: 2차전지 / 양음양 pattern_3 부합",
+      "top_agents": [
+        "health_agent",
+        "theme_agent"
+      ],
+      "weak_agents": [
+        "rs_agent"
+      ],
+      "themes": [
+        "2차전지",
+        "양극재",
+        "전기차"
+      ],
+      "yyang_eum_yyang_pattern": "pattern_3",
+      "trade_plan": {
+        "first_buy": "227,556.0원 부근 1차",
+        "second_buy": "228,022.0원 부근 2차",
+        "third_buy": "227,148.0원 부근 3차 또는 지지 확인 후",
+        "partial_sell_1": "239,904.0원 1차 분할매도",
+        "partial_sell_2": "249,043.0원 2차 분할매도",
+        "stop_loss": "223,740.64원 이탈",
+        "invalidation": "종가 기준 20일선 227,148.0원 이탈 또는 대량 음봉"
+      },
+      "risks": [
+        "거래량 재증가 음봉 또는 단기 이평선 이탈 시 제외"
+      ],
+      "evidence": [
+        {
+          "type": "ohlcv",
+          "source": "mock_price_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "benchmark",
+          "source": "mock_market_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "themes",
+          "source": "mock_theme_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "news",
+          "source": "mock_news_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "market_cap",
+          "source": "mock_market_cap_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "financials",
+          "source": "mock_financial_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "ohlcv",
+          "source": "mock_price_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "intraday",
+          "source": "mock_price_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "ohlcv",
+          "source": "mock_price_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "ohlcv",
+          "source": "mock_price_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "intraday",
+          "source": "mock_price_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "news",
+          "source": "mock_news_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        }
+      ],
+      "agent_scores": {
+        "rs_agent": 54.19,
+        "theme_agent": 78.0,
+        "health_agent": 82.0,
+        "trader_agent": 80.0,
+        "breakout_agent": 75.08,
+        "pullback_agent": 76.0,
+        "scalping_agent": 94.0,
+        "volume_flow_agent": 80.0,
+        "custom_doc_agent": 84.0
+      },
+      "veto_reasons": [],
+      "trade_type": "swing",
+      "pullback_type": "yyang_eum_yyang",
+      "breakout_setup": "forming"
+    },
+    {
+      "ticker": "042700",
+      "name": "한미반도체",
+      "market_cap_krw": 14000000000000,
+      "rs_rank": 8,
+      "rs_percentile": 0.0,
+      "rs_bucket": "RS 하위 구간",
+      "raw_vote_score": 67.07,
+      "final_grade": "Weak Watch",
+      "primary_reason": "KOSPI 대비 RS 5/10/20일이 3.21/-9.23/-8.47%p입니다. / 주요 테마: HBM 장비 / 양음양 pattern_2 부합",
+      "top_agents": [
+        "health_agent",
+        "theme_agent",
+        "trader_agent"
+      ],
+      "weak_agents": [
+        "rs_agent",
+        "breakout_agent"
+      ],
+      "themes": [
+        "HBM 장비",
+        "반도체 장비",
+        "AI 반도체"
+      ],
+      "yyang_eum_yyang_pattern": "pattern_2",
+      "trade_plan": {
+        "first_buy": "140,940.0원 부근 1차",
+        "second_buy": "145,099.0원 부근 2차",
+        "third_buy": "149,414.0원 부근 3차 또는 지지 확인 후",
+        "partial_sell_1": "148,838.0원 1차 분할매도",
+        "partial_sell_2": "154,508.0원 2차 분할매도",
+        "stop_loss": "142,922.98원 이탈",
+        "invalidation": "종가 기준 20일선 149,414.0원 이탈 또는 대량 음봉"
+      },
+      "risks": [
+        "거래량 재증가 음봉 또는 단기 이평선 이탈 시 제외"
+      ],
+      "evidence": [
+        {
+          "type": "ohlcv",
+          "source": "mock_price_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "benchmark",
+          "source": "mock_market_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "themes",
+          "source": "mock_theme_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "news",
+          "source": "mock_news_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "market_cap",
+          "source": "mock_market_cap_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "financials",
+          "source": "mock_financial_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "ohlcv",
+          "source": "mock_price_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "intraday",
+          "source": "mock_price_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "ohlcv",
+          "source": "mock_price_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "ohlcv",
+          "source": "mock_price_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "intraday",
+          "source": "mock_price_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "news",
+          "source": "mock_news_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        }
+      ],
+      "agent_scores": {
+        "rs_agent": 41.07,
+        "theme_agent": 94.33,
+        "health_agent": 82.0,
+        "trader_agent": 80.0,
+        "breakout_agent": 45.0,
+        "pullback_agent": 84.0,
+        "scalping_agent": 94.0,
+        "volume_flow_agent": 70.0,
+        "custom_doc_agent": 76.0
+      },
+      "veto_reasons": [],
+      "trade_type": "swing",
+      "pullback_type": "yyang_eum_yyang",
+      "breakout_setup": "failed"
+    },
+    {
+      "ticker": "005930",
+      "name": "삼성전자",
+      "market_cap_krw": 460000000000000,
+      "rs_rank": 4,
+      "rs_percentile": 57.14,
+      "rs_bucket": "RS 하위 구간",
+      "raw_vote_score": 66.85,
+      "final_grade": "Weak Watch",
+      "primary_reason": "KOSPI 대비 RS 5/10/20일이 0.86/1.31/1.72%p입니다. / 주요 테마: 메모리",
+      "top_agents": [
+        "health_agent",
+        "theme_agent"
+      ],
+      "weak_agents": [
+        "custom_doc_agent"
+      ],
+      "themes": [
+        "메모리",
+        "파운드리",
+        "AI 반도체"
+      ],
+      "yyang_eum_yyang_pattern": "none",
+      "trade_plan": {
+        "first_buy": "83,910.0원 부근 1차",
+        "second_buy": "83,727.0원 부근 2차",
+        "third_buy": "83,157.0원 부근 3차 또는 지지 확인 후",
+        "partial_sell_1": "89,023.0원 1차 분할매도",
+        "partial_sell_2": "92,414.0원 2차 분할매도",
+        "stop_loss": "81,909.67원 이탈",
+        "invalidation": "종가 기준 20일선 83,157.0원 이탈 또는 대량 음봉"
+      },
+      "risks": [
+        "문서 기반 전략 가점 없음"
+      ],
+      "evidence": [
+        {
+          "type": "ohlcv",
+          "source": "mock_price_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "benchmark",
+          "source": "mock_market_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "themes",
+          "source": "mock_theme_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "news",
+          "source": "mock_news_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "market_cap",
+          "source": "mock_market_cap_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "financials",
+          "source": "mock_financial_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "ohlcv",
+          "source": "mock_price_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "intraday",
+          "source": "mock_price_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "ohlcv",
+          "source": "mock_price_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "ohlcv",
+          "source": "mock_price_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "intraday",
+          "source": "mock_price_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        },
+        {
+          "type": "news",
+          "source": "mock_news_provider",
+          "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+          "is_stale": false
+        }
+      ],
+      "agent_scores": {
+        "rs_agent": 67.45,
+        "theme_agent": 76.33,
+        "health_agent": 82.0,
+        "trader_agent": 80.0,
+        "breakout_agent": 77.85,
+        "pullback_agent": 62.0,
+        "scalping_agent": 94.0,
+        "volume_flow_agent": 70.0,
+        "custom_doc_agent": 42.0
+      },
+      "veto_reasons": [],
+      "trade_type": "swing",
+      "pullback_type": "box_support",
+      "breakout_setup": "forming"
+    }
+  ],
+  "excluded": [
+    {
+      "ticker": "999999",
+      "name": "소형테스트",
+      "market_cap_krw": 120000000000,
+      "reason": "market_cap_below_300bn"
+    },
+    {
+      "ticker": "123456",
+      "name": "리스크테크",
+      "reason": "투자경고, 최근 심각한 악재 공시"
+    }
+  ],
+  "report": "# Multi-Agent Stock Picker Report\n\n## 1. 데이터 기준\n- 요청 시각: 2026-05-02T01:24:00+09:00\n- 데이터 최신화 시각: 2026-05-02T01:24:00+09:00\n- 장중/장마감 여부: 장마감 후\n- 사용한 벤치마크: KOSPI_KOSDAQ_BY_LISTING\n- 시총 필터: 3,000억 이상\n\n## 2. 시장 요약\n- KOSPI/KOSDAQ 방향: mock benchmark 기준 RS 강한 종목 우선 선별\n- 강한 섹터: AI 반도체, HBM, 반도체, AI 인프라, 전장\n- 약한 섹터: RS 하위 bucket 후보\n- 오늘의 주도 테마: AI 반도체, HBM, 반도체, AI 인프라, 전장\n- 리스크 이벤트: Health veto/시총 제외 2건\n\n## 3. RS 상위 후보\n| 순위 | 종목 | 시총 | RS 5D | RS 10D | RS 20D | RS 추세 | 테마 | 상태 |\n|---:|---|---:|---:|---:|---:|---|---|---|\n| 1 | 리스크테크(123456) | 6,500억 | 6.55 | 9.45 | 10.48 | rising | 테마성 재료 | danger |\n| 2 | SK하이닉스(000660) | 1,450,000억 | 2.59 | 4.41 | 7.08 | rising | HBM | strong |\n| 3 | LG전자(066570) | 180,000억 | 0.5 | 0.6 | 0.29 | rising | 전장 | strong |\n| 4 | 삼성전자(005930) | 4,600,000억 | 0.86 | 1.31 | 1.72 | rising | 메모리 | strong |\n| 5 | 에코프로비엠(247540) | 115,000억 | -0.05 | 0.14 | 0.5 | falling | 2차전지 | strong |\n| 6 | LS ELECTRIC(010120) | 72,000억 | 8.25 | -5.39 | -4.26 | flat | 전력기기 | strong |\n| 7 | NAVER(035420) | 320,000억 | 0.2 | -0.01 | -0.92 | flat | AI검색 | strong |\n| 8 | 한미반도체(042700) | 140,000억 | 3.21 | -9.23 | -8.47 | flat | HBM 장비 | strong |\n\n## 4. 최종 추천 종목 Top N\n### 1. SK하이닉스(000660)\n- 최종 등급: Buy Candidate\n- RS 순위: 2 / Voting 점수: 71.9\n- 핵심 테마 3개: HBM, 반도체, AI 인프라\n- 양음양 패턴: none\n- 구분: swing / 돌파 forming / 눌림 box_support\n- 1차 매수: 226,835.0원 부근 1차\n- 2차 매수: 225,086.0원 부근 2차\n- 3차 매수: 220,840.0원 부근 3차 또는 지지 확인 후\n- 분할매도: 242,753.0원 1차 분할매도 / 252,000.0원 2차 분할매도\n- 손절선: 217,527.36원 이탈\n- 무효화 조건: 종가 기준 20일선 220,840.0원 이탈 또는 대량 음봉\n- 핵심 리스크: 손절선까지 거리가 커지면 비중 축소, 문서 기반 전략 가점 없음\n\n### 2. LG전자(066570)\n- 최종 등급: Watchlist\n- RS 순위: 3 / Voting 점수: 64.2\n- 핵심 테마 3개: 전장, 가전, 로봇\n- 양음양 패턴: none\n- 구분: swing / 돌파 forming / 눌림 box_support\n- 1차 매수: 107,709.0원 부근 1차\n- 2차 매수: 107,662.0원 부근 2차\n- 3차 매수: 107,301.0원 부근 3차 또는 지지 확인 후\n- 분할매도: 114,112.0원 1차 분할매도 / 118,459.0원 2차 분할매도\n- 손절선: 105,691.56원 이탈\n- 무효화 조건: 종가 기준 20일선 107,301.0원 이탈 또는 대량 음봉\n- 핵심 리스크: 문서 기반 전략 가점 없음\n\n### 3. 에코프로비엠(247540)\n- 최종 등급: Weak Watch\n- RS 순위: 5 / Voting 점수: 70.4\n- 핵심 테마 3개: 2차전지, 양극재, 전기차\n- 양음양 패턴: pattern_3\n- 구분: swing / 돌파 forming / 눌림 yyang_eum_yyang\n- 1차 매수: 227,556.0원 부근 1차\n- 2차 매수: 228,022.0원 부근 2차\n- 3차 매수: 227,148.0원 부근 3차 또는 지지 확인 후\n- 분할매도: 239,904.0원 1차 분할매도 / 249,043.0원 2차 분할매도\n- 손절선: 223,740.64원 이탈\n- 무효화 조건: 종가 기준 20일선 227,148.0원 이탈 또는 대량 음봉\n- 핵심 리스크: 거래량 재증가 음봉 또는 단기 이평선 이탈 시 제외\n\n### 4. 한미반도체(042700)\n- 최종 등급: Weak Watch\n- RS 순위: 8 / Voting 점수: 67.07\n- 핵심 테마 3개: HBM 장비, 반도체 장비, AI 반도체\n- 양음양 패턴: pattern_2\n- 구분: swing / 돌파 failed / 눌림 yyang_eum_yyang\n- 1차 매수: 140,940.0원 부근 1차\n- 2차 매수: 145,099.0원 부근 2차\n- 3차 매수: 149,414.0원 부근 3차 또는 지지 확인 후\n- 분할매도: 148,838.0원 1차 분할매도 / 154,508.0원 2차 분할매도\n- 손절선: 142,922.98원 이탈\n- 무효화 조건: 종가 기준 20일선 149,414.0원 이탈 또는 대량 음봉\n- 핵심 리스크: 거래량 재증가 음봉 또는 단기 이평선 이탈 시 제외\n\n### 5. 삼성전자(005930)\n- 최종 등급: Weak Watch\n- RS 순위: 4 / Voting 점수: 66.85\n- 핵심 테마 3개: 메모리, 파운드리, AI 반도체\n- 양음양 패턴: none\n- 구분: swing / 돌파 forming / 눌림 box_support\n- 1차 매수: 83,910.0원 부근 1차\n- 2차 매수: 83,727.0원 부근 2차\n- 3차 매수: 83,157.0원 부근 3차 또는 지지 확인 후\n- 분할매도: 89,023.0원 1차 분할매도 / 92,414.0원 2차 분할매도\n- 손절선: 81,909.67원 이탈\n- 무효화 조건: 종가 기준 20일선 83,157.0원 이탈 또는 대량 음봉\n- 핵심 리스크: 문서 기반 전략 가점 없음\n\n## 5. Agent별 투표 결과\n| 종목 | RS | Theme | Health | Trader | Breakout | Pullback | Scalping | Volume | Custom | Vote | 최종등급 |\n|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|\n| SK하이닉스 | 83.47 | 99.0 | 82.0 | 72.0 | 77.95 | 62.0 | 94.0 | 70.0 | 42.0 | 71.9 | Buy Candidate |\n| LG전자 | 67.46 | 61.0 | 82.0 | 80.0 | 77.84 | 62.0 | 94.0 | 62.0 | 42.0 | 64.2 | Watchlist |\n| 에코프로비엠 | 54.19 | 78.0 | 82.0 | 80.0 | 75.08 | 76.0 | 94.0 | 80.0 | 84.0 | 70.4 | Weak Watch |\n| 한미반도체 | 41.07 | 94.33 | 82.0 | 80.0 | 45.0 | 84.0 | 94.0 | 70.0 | 76.0 | 67.07 | Weak Watch |\n| 삼성전자 | 67.45 | 76.33 | 82.0 | 80.0 | 77.85 | 62.0 | 94.0 | 70.0 | 42.0 | 66.85 | Weak Watch |\n\n## 6. 양음양 후보\n- pattern_1 후보: 없음\n- pattern_2 후보: 한미반도체(042700)\n- pattern_3 후보: 에코프로비엠(247540)\n- 매수 구간: 전일 저점, 5일선, 10일선 부근에서 다분할 기준\n- 거래량 위험: 음봉일 평균 이상 거래량 또는 단기 이평선 이탈 시 제외\n\n## 7. 제외 종목\n- 소형테스트(999999): market_cap_below_300bn / 재검토 조건: veto 해소와 RS 재상승\n- 리스크테크(123456): 투자경고, 최근 심각한 악재 공시 / 재검토 조건: veto 해소와 RS 재상승\n\n## 8. 다음 세션 체크리스트\n- 돌파 확인 종목: SK하이닉스, LG전자, 에코프로비엠, 삼성전자\n- 눌림 대기 종목: SK하이닉스, LG전자, 에코프로비엠, 한미반도체, 삼성전자\n- 단타 후보: 없음\n- 뉴스/공시 확인 필요 종목: 소형테스트, 리스크테크\n- 위험 이벤트: 장중 대량 음봉, 투자경고/공시, 시장 급락 시 RS 재계산\n",
+  "agent_results": {
+    "123456": {
+      "rs_agent": {
+        "agent": "rs_agent",
+        "ticker": "123456",
+        "score": 98.0,
+        "confidence": 0.9,
+        "reason": "KOSDAQ 대비 RS 5/10/20일이 6.55/9.45/10.48%p입니다.",
+        "risk": "RS는 강하지만 단기 과열 여부는 다른 Agent 확인 필요",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "benchmark",
+            "source": "mock_market_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "market_cap",
+            "source": "mock_market_cap_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "market_cap_krw": 650000000000,
+        "passed_market_cap_filter": true,
+        "rs_rank": 1,
+        "rs_percentile": 100.0,
+        "rs_5d": 6.55,
+        "rs_10d": 9.45,
+        "rs_20d": 10.48,
+        "rs_60d": 31.5,
+        "rs_line_trend": "rising",
+        "market_outperformance": true,
+        "sector_outperformance": true,
+        "squeeze_candidate_by_rs": false,
+        "name": "리스크테크"
+      },
+      "theme_agent": {
+        "agent": "theme_agent",
+        "ticker": "123456",
+        "score": 55.33,
+        "confidence": 0.82,
+        "reason": "테마성 재료 중심으로 3개 테마가 연결됩니다.",
+        "risk": "crowded 단계 테마는 장중 변동성 확대 가능",
+        "evidence": [
+          {
+            "type": "themes",
+            "source": "mock_theme_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "news",
+            "source": "mock_news_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "themes": [
+          {
+            "name": "테마성 재료",
+            "strength": 71.0,
+            "stage": "crowded",
+            "catalyst": "단기 급등",
+            "evidence": [
+              "투자경고 지정 이후 변동성 확대"
+            ]
+          },
+          {
+            "name": "바이오",
+            "strength": 45.0,
+            "stage": "early",
+            "catalyst": "불확실",
+            "evidence": [
+              "투자경고 지정 이후 변동성 확대"
+            ]
+          },
+          {
+            "name": "정책",
+            "strength": 44.0,
+            "stage": "early",
+            "catalyst": "루머",
+            "evidence": [
+              "투자경고 지정 이후 변동성 확대"
+            ]
+          }
+        ],
+        "primary_theme": "테마성 재료",
+        "theme_leadership": "laggard"
+      },
+      "health_agent": {
+        "agent": "health_agent",
+        "ticker": "123456",
+        "score": 5.0,
+        "confidence": 0.9,
+        "reason": "투자경고 / 최근 심각한 악재 공시",
+        "risk": "투자경고, 최근 심각한 악재 공시",
+        "evidence": [
+          {
+            "type": "market_cap",
+            "source": "mock_market_cap_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "financials",
+            "source": "mock_financial_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "disclosures",
+            "source": "mock_disclosure_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "financial_health": "danger",
+        "liquidity_status": "normal",
+        "market_cap_krw": 650000000000,
+        "disclosure_risk": "high",
+        "veto": true,
+        "veto_reason": "투자경고, 최근 심각한 악재 공시"
+      },
+      "trader_agent": {
+        "agent": "trader_agent",
+        "ticker": "123456",
+        "score": 68.0,
+        "confidence": 0.78,
+        "reason": "전고점 돌파 구간에 가까워 거래량 확인형 접근이 필요합니다.",
+        "risk": "손절선까지 거리가 커지면 비중 축소",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "intraday",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "trade_type": "day_trade",
+        "buy_plan": {
+          "first_buy": "11,821.0원 부근 1차",
+          "second_buy": "11,755.0원 부근 2차",
+          "third_buy": "11,485.0원 부근 3차 또는 지지 확인 후"
+        },
+        "sell_plan": {
+          "partial_sell_1": "13,009.0원 1차 분할매도",
+          "partial_sell_2": "13,504.0원 2차 분할매도",
+          "final_target": "14,124.0원 또는 거래량 climax"
+        },
+        "stop_loss": "11,312.4원 이탈",
+        "invalidation": "종가 기준 20일선 11,485.0원 이탈 또는 대량 음봉",
+        "risk_reward": 0.92
+      },
+      "breakout_agent": {
+        "agent": "breakout_agent",
+        "ticker": "123456",
+        "score": 45.0,
+        "confidence": 0.74,
+        "reason": "저항까지 거리가 있거나 돌파 거래량이 부족합니다.",
+        "risk": "저항 돌파 실패 시 윗꼬리 매물 출회 가능",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "breakout_level": 12064.71,
+        "nearest_resistance": 12064.71,
+        "volume_confirmation_needed": true,
+        "setup": "failed"
+      },
+      "pullback_agent": {
+        "agent": "pullback_agent",
+        "ticker": "123456",
+        "score": 62.0,
+        "confidence": 0.62,
+        "reason": "20일선 위에서 버티지만 거래량 감소 신호는 제한적입니다.",
+        "risk": "음봉 거래량 재증가 시 눌림 실패 가능",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "pullback_type": "box_support",
+        "support_levels": [
+          11821.16,
+          11754.71,
+          11484.67
+        ],
+        "invalid_level": 11312.4,
+        "volume_dry_up": false,
+        "yyang_eum_yyang_candidate": false
+      },
+      "scalping_agent": {
+        "agent": "scalping_agent",
+        "ticker": "123456",
+        "score": 58.0,
+        "confidence": 0.7,
+        "reason": "거래대금 15.8억, 장중 거래량 27,585주 기준입니다.",
+        "risk": "실시간 호가/체결 강도 Provider 연결 전에는 단타 confidence 제한",
+        "evidence": [
+          {
+            "type": "intraday",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "news",
+            "source": "mock_news_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "daytrade_grade": "C",
+        "entry_trigger": "VWAP 12,384.0원 회복 후 직전 분봉 고점 돌파",
+        "exit_trigger": "VWAP 재이탈 또는 3분봉 장대음봉",
+        "max_holding_time": "당일 종가 전 청산"
+      },
+      "volume_flow_agent": {
+        "agent": "volume_flow_agent",
+        "ticker": "123456",
+        "score": 62.0,
+        "confidence": 0.76,
+        "reason": "20일 평균 대비 거래량 배율은 1.29배입니다.",
+        "risk": "",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "supply_demand",
+            "source": "mock_volume_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "volume_status": "neutral",
+        "supply_demand": {
+          "foreign": "net_sell",
+          "institution": "net_sell",
+          "retail": "net_buy",
+          "program": "neutral"
+        },
+        "key_volume_levels": [
+          {
+            "level": 12389.38,
+            "description": "latest close"
+          },
+          {
+            "level": 12389.38,
+            "description": "20d high"
+          }
+        ]
+      },
+      "custom_doc_agent": {
+        "agent": "custom_doc_agent",
+        "ticker": "123456",
+        "score": 42.0,
+        "confidence": 0.55,
+        "reason": "양음양 문서 규칙에 명확히 부합하지 않습니다.",
+        "risk": "문서 기반 전략 가점 없음",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "strategy_doc",
+            "path": "C:\\Users\\guswl\\OneDrive\\문서\\New project\\stock_picker_agents\\data\\custom_docs\\yyang_eum_yyang.pdf"
+          }
+        ],
+        "strategy_doc": "yyang_eum_yyang",
+        "matched_pattern": "none",
+        "matched_rules": [],
+        "violated_rules": [
+          "bullish_candle_range",
+          "next_day_is_not_bearish",
+          "breaks_ma5",
+          "bearish_volume_too_high",
+          "volume_not_high_enough",
+          "next_day_not_below_prev_close",
+          "volume_not_contracting",
+          "breaks_short_ma"
+        ],
+        "entry_zone_from_doc": "",
+        "invalid_level_from_doc": null,
+        "conflicts": []
+      }
+    },
+    "000660": {
+      "rs_agent": {
+        "agent": "rs_agent",
+        "ticker": "000660",
+        "score": 83.47,
+        "confidence": 0.9,
+        "reason": "KOSPI 대비 RS 5/10/20일이 2.59/4.41/7.08%p입니다.",
+        "risk": "RS는 강하지만 단기 과열 여부는 다른 Agent 확인 필요",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "benchmark",
+            "source": "mock_market_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "market_cap",
+            "source": "mock_market_cap_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "market_cap_krw": 145000000000000,
+        "passed_market_cap_filter": true,
+        "rs_rank": 2,
+        "rs_percentile": 85.71,
+        "rs_5d": 2.59,
+        "rs_10d": 4.41,
+        "rs_20d": 7.08,
+        "rs_60d": 22.52,
+        "rs_line_trend": "rising",
+        "market_outperformance": true,
+        "sector_outperformance": true,
+        "squeeze_candidate_by_rs": false,
+        "name": "SK하이닉스"
+      },
+      "theme_agent": {
+        "agent": "theme_agent",
+        "ticker": "000660",
+        "score": 99.0,
+        "confidence": 0.82,
+        "reason": "HBM 중심으로 3개 테마가 연결됩니다.",
+        "risk": "",
+        "evidence": [
+          {
+            "type": "themes",
+            "source": "mock_theme_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "news",
+            "source": "mock_news_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "themes": [
+          {
+            "name": "HBM",
+            "strength": 94.0,
+            "stage": "expanding",
+            "catalyst": "AI 메모리 수요",
+            "evidence": [
+              "AI 서버향 HBM 수요 증가 기대",
+              "메모리 가격 반등 전망"
+            ]
+          },
+          {
+            "name": "반도체",
+            "strength": 91.0,
+            "stage": "expanding",
+            "catalyst": "업황 개선",
+            "evidence": [
+              "AI 서버향 HBM 수요 증가 기대",
+              "메모리 가격 반등 전망"
+            ]
+          },
+          {
+            "name": "AI 인프라",
+            "strength": 88.0,
+            "stage": "expanding",
+            "catalyst": "데이터센터 투자",
+            "evidence": [
+              "AI 서버향 HBM 수요 증가 기대",
+              "메모리 가격 반등 전망"
+            ]
+          }
+        ],
+        "primary_theme": "HBM",
+        "theme_leadership": "leader"
+      },
+      "health_agent": {
+        "agent": "health_agent",
+        "ticker": "000660",
+        "score": 82.0,
+        "confidence": 0.9,
+        "reason": "건전성 veto 사유가 없습니다.",
+        "risk": "",
+        "evidence": [
+          {
+            "type": "market_cap",
+            "source": "mock_market_cap_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "financials",
+            "source": "mock_financial_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "disclosures",
+            "source": "mock_disclosure_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "financial_health": "strong",
+        "liquidity_status": "good",
+        "market_cap_krw": 145000000000000,
+        "disclosure_risk": "low",
+        "veto": false,
+        "veto_reason": ""
+      },
+      "trader_agent": {
+        "agent": "trader_agent",
+        "ticker": "000660",
+        "score": 72.0,
+        "confidence": 0.78,
+        "reason": "단기 이평선 부근에서 과열이 크지 않아 분할 접근이 가능합니다.",
+        "risk": "손절선까지 거리가 커지면 비중 축소",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "intraday",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "trade_type": "swing",
+        "buy_plan": {
+          "first_buy": "226,835.0원 부근 1차",
+          "second_buy": "225,086.0원 부근 2차",
+          "third_buy": "220,840.0원 부근 3차 또는 지지 확인 후"
+        },
+        "sell_plan": {
+          "partial_sell_1": "242,753.0원 1차 분할매도",
+          "partial_sell_2": "252,000.0원 2차 분할매도",
+          "final_target": "263,560.0원 또는 거래량 climax"
+        },
+        "stop_loss": "217,527.36원 이탈",
+        "invalidation": "종가 기준 20일선 220,840.0원 이탈 또는 대량 음봉",
+        "risk_reward": 1.35
+      },
+      "breakout_agent": {
+        "agent": "breakout_agent",
+        "ticker": "000660",
+        "score": 77.95,
+        "confidence": 0.74,
+        "reason": "박스권 상단 또는 전고점에 근접해 돌파 확인 구간입니다.",
+        "risk": "저항 돌파 실패 시 윗꼬리 매물 출회 가능",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "breakout_level": 228316.32,
+        "nearest_resistance": 228316.32,
+        "volume_confirmation_needed": true,
+        "setup": "forming"
+      },
+      "pullback_agent": {
+        "agent": "pullback_agent",
+        "ticker": "000660",
+        "score": 62.0,
+        "confidence": 0.62,
+        "reason": "20일선 위에서 버티지만 거래량 감소 신호는 제한적입니다.",
+        "risk": "음봉 거래량 재증가 시 눌림 실패 가능",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "pullback_type": "box_support",
+        "support_levels": [
+          226834.8,
+          225086.31,
+          220839.96
+        ],
+        "invalid_level": 217527.36,
+        "volume_dry_up": false,
+        "yyang_eum_yyang_candidate": false
+      },
+      "scalping_agent": {
+        "agent": "scalping_agent",
+        "ticker": "000660",
+        "score": 94.0,
+        "confidence": 0.7,
+        "reason": "거래대금 8,212.0억, 장중 거래량 769,600주 기준입니다.",
+        "risk": "실시간 호가/체결 강도 Provider 연결 전에는 단타 confidence 제한",
+        "evidence": [
+          {
+            "type": "intraday",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "news",
+            "source": "mock_news_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "daytrade_grade": "A",
+        "entry_trigger": "VWAP 231,099.0원 회복 후 직전 분봉 고점 돌파",
+        "exit_trigger": "VWAP 재이탈 또는 3분봉 장대음봉",
+        "max_holding_time": "당일 종가 전 청산"
+      },
+      "volume_flow_agent": {
+        "agent": "volume_flow_agent",
+        "ticker": "000660",
+        "score": 70.0,
+        "confidence": 0.76,
+        "reason": "20일 평균 대비 거래량 배율은 1.19배입니다.",
+        "risk": "",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "supply_demand",
+            "source": "mock_volume_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "volume_status": "neutral",
+        "supply_demand": {
+          "foreign": "net_buy_strong",
+          "institution": "net_buy",
+          "retail": "net_sell",
+          "program": "net_buy"
+        },
+        "key_volume_levels": [
+          {
+            "level": 231193.11,
+            "description": "latest close"
+          },
+          {
+            "level": 231193.11,
+            "description": "20d high"
+          }
+        ]
+      },
+      "custom_doc_agent": {
+        "agent": "custom_doc_agent",
+        "ticker": "000660",
+        "score": 42.0,
+        "confidence": 0.55,
+        "reason": "양음양 문서 규칙에 명확히 부합하지 않습니다.",
+        "risk": "문서 기반 전략 가점 없음",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "strategy_doc",
+            "path": "C:\\Users\\guswl\\OneDrive\\문서\\New project\\stock_picker_agents\\data\\custom_docs\\yyang_eum_yyang.pdf"
+          }
+        ],
+        "strategy_doc": "yyang_eum_yyang",
+        "matched_pattern": "none",
+        "matched_rules": [],
+        "violated_rules": [
+          "bullish_candle_range",
+          "next_day_is_not_bearish",
+          "breaks_ma5",
+          "bearish_volume_too_high",
+          "volume_not_high_enough",
+          "next_day_not_below_prev_close",
+          "no_prior_bullish_candle",
+          "volume_not_contracting"
+        ],
+        "entry_zone_from_doc": "",
+        "invalid_level_from_doc": null,
+        "conflicts": []
+      }
+    },
+    "066570": {
+      "rs_agent": {
+        "agent": "rs_agent",
+        "ticker": "066570",
+        "score": 67.46,
+        "confidence": 0.9,
+        "reason": "KOSPI 대비 RS 5/10/20일이 0.50/0.60/0.29%p입니다.",
+        "risk": "시장 대비 우위가 약하거나 구간별 편차가 있습니다.",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "benchmark",
+            "source": "mock_market_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "market_cap",
+            "source": "mock_market_cap_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "market_cap_krw": 18000000000000,
+        "passed_market_cap_filter": true,
+        "rs_rank": 3,
+        "rs_percentile": 71.43,
+        "rs_5d": 0.5,
+        "rs_10d": 0.6,
+        "rs_20d": 0.29,
+        "rs_60d": 0.59,
+        "rs_line_trend": "rising",
+        "market_outperformance": true,
+        "sector_outperformance": true,
+        "squeeze_candidate_by_rs": false,
+        "name": "LG전자"
+      },
+      "theme_agent": {
+        "agent": "theme_agent",
+        "ticker": "066570",
+        "score": 61.0,
+        "confidence": 0.82,
+        "reason": "전장 중심으로 3개 테마가 연결됩니다.",
+        "risk": "",
+        "evidence": [
+          {
+            "type": "themes",
+            "source": "mock_theme_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "news",
+            "source": "mock_news_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "themes": [
+          {
+            "name": "전장",
+            "strength": 64.0,
+            "stage": "early",
+            "catalyst": "차량용 부품",
+            "evidence": [
+              "전장 사업 수익성 개선 기대"
+            ]
+          },
+          {
+            "name": "가전",
+            "strength": 55.0,
+            "stage": "early",
+            "catalyst": "수익성 개선",
+            "evidence": [
+              "전장 사업 수익성 개선 기대"
+            ]
+          },
+          {
+            "name": "로봇",
+            "strength": 52.0,
+            "stage": "early",
+            "catalyst": "신사업",
+            "evidence": [
+              "전장 사업 수익성 개선 기대"
+            ]
+          }
+        ],
+        "primary_theme": "전장",
+        "theme_leadership": "laggard"
+      },
+      "health_agent": {
+        "agent": "health_agent",
+        "ticker": "066570",
+        "score": 82.0,
+        "confidence": 0.9,
+        "reason": "건전성 veto 사유가 없습니다.",
+        "risk": "",
+        "evidence": [
+          {
+            "type": "market_cap",
+            "source": "mock_market_cap_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "financials",
+            "source": "mock_financial_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "disclosures",
+            "source": "mock_disclosure_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "financial_health": "strong",
+        "liquidity_status": "good",
+        "market_cap_krw": 18000000000000,
+        "disclosure_risk": "low",
+        "veto": false,
+        "veto_reason": ""
+      },
+      "trader_agent": {
+        "agent": "trader_agent",
+        "ticker": "066570",
+        "score": 80.0,
+        "confidence": 0.78,
+        "reason": "단기 이평선 부근에서 과열이 크지 않아 분할 접근이 가능합니다.",
+        "risk": "",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "intraday",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "trade_type": "swing",
+        "buy_plan": {
+          "first_buy": "107,709.0원 부근 1차",
+          "second_buy": "107,662.0원 부근 2차",
+          "third_buy": "107,301.0원 부근 3차 또는 지지 확인 후"
+        },
+        "sell_plan": {
+          "partial_sell_1": "114,112.0원 1차 분할매도",
+          "partial_sell_2": "118,459.0원 2차 분할매도",
+          "final_target": "123,893.0원 또는 거래량 climax"
+        },
+        "stop_loss": "105,691.56원 이탈",
+        "invalidation": "종가 기준 20일선 107,301.0원 이탈 또는 대량 음봉",
+        "risk_reward": 2.91
+      },
+      "breakout_agent": {
+        "agent": "breakout_agent",
+        "ticker": "066570",
+        "score": 77.84,
+        "confidence": 0.74,
+        "reason": "박스권 상단 또는 전고점에 근접해 돌파 확인 구간입니다.",
+        "risk": "저항 돌파 실패 시 윗꼬리 매물 출회 가능",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "breakout_level": 108304.75,
+        "nearest_resistance": 108304.75,
+        "volume_confirmation_needed": true,
+        "setup": "forming"
+      },
+      "pullback_agent": {
+        "agent": "pullback_agent",
+        "ticker": "066570",
+        "score": 62.0,
+        "confidence": 0.62,
+        "reason": "20일선 위에서 버티지만 거래량 감소 신호는 제한적입니다.",
+        "risk": "음봉 거래량 재증가 시 눌림 실패 가능",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "pullback_type": "box_support",
+        "support_levels": [
+          107708.65,
+          107661.77,
+          107301.07
+        ],
+        "invalid_level": 105691.56,
+        "volume_dry_up": false,
+        "yyang_eum_yyang_candidate": false
+      },
+      "scalping_agent": {
+        "agent": "scalping_agent",
+        "ticker": "066570",
+        "score": 94.0,
+        "confidence": 0.7,
+        "reason": "거래대금 1,163.0억, 장중 거래량 231,860주 기준입니다.",
+        "risk": "실시간 호가/체결 강도 Provider 연결 전에는 단타 confidence 제한",
+        "evidence": [
+          {
+            "type": "intraday",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "news",
+            "source": "mock_news_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "daytrade_grade": "A",
+        "entry_trigger": "VWAP 108,634.0원 회복 후 직전 분봉 고점 돌파",
+        "exit_trigger": "VWAP 재이탈 또는 3분봉 장대음봉",
+        "max_holding_time": "당일 종가 전 청산"
+      },
+      "volume_flow_agent": {
+        "agent": "volume_flow_agent",
+        "ticker": "066570",
+        "score": 62.0,
+        "confidence": 0.76,
+        "reason": "20일 평균 대비 거래량 배율은 1.17배입니다.",
+        "risk": "",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "supply_demand",
+            "source": "mock_volume_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "volume_status": "neutral",
+        "supply_demand": {
+          "foreign": "net_sell",
+          "institution": "neutral",
+          "retail": "net_buy",
+          "program": "neutral"
+        },
+        "key_volume_levels": [
+          {
+            "level": 108678.3,
+            "description": "latest close"
+          },
+          {
+            "level": 108678.3,
+            "description": "20d high"
+          }
+        ]
+      },
+      "custom_doc_agent": {
+        "agent": "custom_doc_agent",
+        "ticker": "066570",
+        "score": 42.0,
+        "confidence": 0.55,
+        "reason": "양음양 문서 규칙에 명확히 부합하지 않습니다.",
+        "risk": "문서 기반 전략 가점 없음",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "strategy_doc",
+            "path": "C:\\Users\\guswl\\OneDrive\\문서\\New project\\stock_picker_agents\\data\\custom_docs\\yyang_eum_yyang.pdf"
+          }
+        ],
+        "strategy_doc": "yyang_eum_yyang",
+        "matched_pattern": "none",
+        "matched_rules": [],
+        "violated_rules": [
+          "bullish_candle_range",
+          "next_day_is_not_bearish",
+          "breaks_ma5",
+          "bearish_volume_too_high",
+          "volume_not_high_enough",
+          "next_day_not_below_prev_close",
+          "breaks_ma5_ma10",
+          "no_prior_bullish_candle",
+          "volume_not_contracting"
+        ],
+        "entry_zone_from_doc": "",
+        "invalid_level_from_doc": null,
+        "conflicts": []
+      }
+    },
+    "005930": {
+      "rs_agent": {
+        "agent": "rs_agent",
+        "ticker": "005930",
+        "score": 67.45,
+        "confidence": 0.9,
+        "reason": "KOSPI 대비 RS 5/10/20일이 0.86/1.31/1.72%p입니다.",
+        "risk": "시장 대비 우위가 약하거나 구간별 편차가 있습니다.",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "benchmark",
+            "source": "mock_market_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "market_cap",
+            "source": "mock_market_cap_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "market_cap_krw": 460000000000000,
+        "passed_market_cap_filter": true,
+        "rs_rank": 4,
+        "rs_percentile": 57.14,
+        "rs_5d": 0.86,
+        "rs_10d": 1.31,
+        "rs_20d": 1.72,
+        "rs_60d": 5.05,
+        "rs_line_trend": "rising",
+        "market_outperformance": true,
+        "sector_outperformance": true,
+        "squeeze_candidate_by_rs": false,
+        "name": "삼성전자"
+      },
+      "theme_agent": {
+        "agent": "theme_agent",
+        "ticker": "005930",
+        "score": 76.33,
+        "confidence": 0.82,
+        "reason": "메모리 중심으로 3개 테마가 연결됩니다.",
+        "risk": "",
+        "evidence": [
+          {
+            "type": "themes",
+            "source": "mock_theme_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "news",
+            "source": "mock_news_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "themes": [
+          {
+            "name": "메모리",
+            "strength": 76.0,
+            "stage": "expanding",
+            "catalyst": "가격 반등",
+            "evidence": [
+              "메모리 업황 개선 기대",
+              "외국인 대형주 순매수"
+            ]
+          },
+          {
+            "name": "파운드리",
+            "strength": 63.0,
+            "stage": "early",
+            "catalyst": "수율 개선",
+            "evidence": [
+              "메모리 업황 개선 기대",
+              "외국인 대형주 순매수"
+            ]
+          },
+          {
+            "name": "AI 반도체",
+            "strength": 70.0,
+            "stage": "expanding",
+            "catalyst": "고대역 메모리",
+            "evidence": [
+              "메모리 업황 개선 기대",
+              "외국인 대형주 순매수"
+            ]
+          }
+        ],
+        "primary_theme": "메모리",
+        "theme_leadership": "fast_follower"
+      },
+      "health_agent": {
+        "agent": "health_agent",
+        "ticker": "005930",
+        "score": 82.0,
+        "confidence": 0.9,
+        "reason": "건전성 veto 사유가 없습니다.",
+        "risk": "",
+        "evidence": [
+          {
+            "type": "market_cap",
+            "source": "mock_market_cap_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "financials",
+            "source": "mock_financial_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "disclosures",
+            "source": "mock_disclosure_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "financial_health": "strong",
+        "liquidity_status": "good",
+        "market_cap_krw": 460000000000000,
+        "disclosure_risk": "low",
+        "veto": false,
+        "veto_reason": ""
+      },
+      "trader_agent": {
+        "agent": "trader_agent",
+        "ticker": "005930",
+        "score": 80.0,
+        "confidence": 0.78,
+        "reason": "단기 이평선 부근에서 과열이 크지 않아 분할 접근이 가능합니다.",
+        "risk": "",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "intraday",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "trade_type": "swing",
+        "buy_plan": {
+          "first_buy": "83,910.0원 부근 1차",
+          "second_buy": "83,727.0원 부근 2차",
+          "third_buy": "83,157.0원 부근 3차 또는 지지 확인 후"
+        },
+        "sell_plan": {
+          "partial_sell_1": "89,023.0원 1차 분할매도",
+          "partial_sell_2": "92,414.0원 2차 분할매도",
+          "final_target": "96,653.0원 또는 거래량 climax"
+        },
+        "stop_loss": "81,909.67원 이탈",
+        "invalidation": "종가 기준 20일선 83,157.0원 이탈 또는 대량 음봉",
+        "risk_reward": 2.36
+      },
+      "breakout_agent": {
+        "agent": "breakout_agent",
+        "ticker": "005930",
+        "score": 77.85,
+        "confidence": 0.74,
+        "reason": "박스권 상단 또는 전고점에 근접해 돌파 확인 구간입니다.",
+        "risk": "저항 돌파 실패 시 윗꼬리 매물 출회 가능",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "breakout_level": 84177.33,
+        "nearest_resistance": 84177.33,
+        "volume_confirmation_needed": true,
+        "setup": "forming"
+      },
+      "pullback_agent": {
+        "agent": "pullback_agent",
+        "ticker": "005930",
+        "score": 62.0,
+        "confidence": 0.62,
+        "reason": "20일선 위에서 버티지만 거래량 감소 신호는 제한적입니다.",
+        "risk": "음봉 거래량 재증가 시 눌림 실패 가능",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "pullback_type": "box_support",
+        "support_levels": [
+          83910.41,
+          83727.33,
+          83157.03
+        ],
+        "invalid_level": 81909.67,
+        "volume_dry_up": false,
+        "yyang_eum_yyang_candidate": false
+      },
+      "scalping_agent": {
+        "agent": "scalping_agent",
+        "ticker": "005930",
+        "score": 94.0,
+        "confidence": 0.7,
+        "reason": "거래대금 14,015.7억, 장중 거래량 3,581,760주 기준입니다.",
+        "risk": "실시간 호가/체결 강도 Provider 연결 전에는 단타 confidence 제한",
+        "evidence": [
+          {
+            "type": "intraday",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "news",
+            "source": "mock_news_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "daytrade_grade": "A",
+        "entry_trigger": "VWAP 84,749.0원 회복 후 직전 분봉 고점 돌파",
+        "exit_trigger": "VWAP 재이탈 또는 3분봉 장대음봉",
+        "max_holding_time": "당일 종가 전 청산"
+      },
+      "volume_flow_agent": {
+        "agent": "volume_flow_agent",
+        "ticker": "005930",
+        "score": 70.0,
+        "confidence": 0.76,
+        "reason": "20일 평균 대비 거래량 배율은 1.17배입니다.",
+        "risk": "",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "supply_demand",
+            "source": "mock_volume_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "volume_status": "neutral",
+        "supply_demand": {
+          "foreign": "net_buy",
+          "institution": "neutral",
+          "retail": "net_sell",
+          "program": "net_buy"
+        },
+        "key_volume_levels": [
+          {
+            "level": 84783.4,
+            "description": "latest close"
+          },
+          {
+            "level": 84783.4,
+            "description": "20d high"
+          }
+        ]
+      },
+      "custom_doc_agent": {
+        "agent": "custom_doc_agent",
+        "ticker": "005930",
+        "score": 42.0,
+        "confidence": 0.55,
+        "reason": "양음양 문서 규칙에 명확히 부합하지 않습니다.",
+        "risk": "문서 기반 전략 가점 없음",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "strategy_doc",
+            "path": "C:\\Users\\guswl\\OneDrive\\문서\\New project\\stock_picker_agents\\data\\custom_docs\\yyang_eum_yyang.pdf"
+          }
+        ],
+        "strategy_doc": "yyang_eum_yyang",
+        "matched_pattern": "none",
+        "matched_rules": [],
+        "violated_rules": [
+          "bullish_candle_range",
+          "next_day_is_not_bearish",
+          "breaks_ma5",
+          "bearish_volume_too_high",
+          "volume_not_high_enough",
+          "next_day_not_below_prev_close",
+          "breaks_ma5_ma10",
+          "no_prior_bullish_candle",
+          "volume_not_contracting"
+        ],
+        "entry_zone_from_doc": "",
+        "invalid_level_from_doc": null,
+        "conflicts": []
+      }
+    },
+    "247540": {
+      "rs_agent": {
+        "agent": "rs_agent",
+        "ticker": "247540",
+        "score": 54.19,
+        "confidence": 0.9,
+        "reason": "KOSDAQ 대비 RS 5/10/20일이 -0.05/0.14/0.50%p입니다.",
+        "risk": "시장 대비 우위가 약하거나 구간별 편차가 있습니다.",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "benchmark",
+            "source": "mock_market_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "market_cap",
+            "source": "mock_market_cap_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "market_cap_krw": 11500000000000,
+        "passed_market_cap_filter": true,
+        "rs_rank": 5,
+        "rs_percentile": 42.86,
+        "rs_5d": -0.05,
+        "rs_10d": 0.14,
+        "rs_20d": 0.5,
+        "rs_60d": 8.36,
+        "rs_line_trend": "falling",
+        "market_outperformance": false,
+        "sector_outperformance": false,
+        "squeeze_candidate_by_rs": false,
+        "name": "에코프로비엠"
+      },
+      "theme_agent": {
+        "agent": "theme_agent",
+        "ticker": "247540",
+        "score": 78.0,
+        "confidence": 0.82,
+        "reason": "2차전지 중심으로 3개 테마가 연결됩니다.",
+        "risk": "",
+        "evidence": [
+          {
+            "type": "themes",
+            "source": "mock_theme_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "news",
+            "source": "mock_news_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "themes": [
+          {
+            "name": "2차전지",
+            "strength": 78.0,
+            "stage": "early",
+            "catalyst": "소재 반등",
+            "evidence": [
+              "2차전지 소재주 반등 시도",
+              "양극재 판가 안정 기대"
+            ]
+          },
+          {
+            "name": "양극재",
+            "strength": 75.0,
+            "stage": "early",
+            "catalyst": "가격 안정",
+            "evidence": [
+              "2차전지 소재주 반등 시도",
+              "양극재 판가 안정 기대"
+            ]
+          },
+          {
+            "name": "전기차",
+            "strength": 69.0,
+            "stage": "early",
+            "catalyst": "정책 기대",
+            "evidence": [
+              "2차전지 소재주 반등 시도",
+              "양극재 판가 안정 기대"
+            ]
+          }
+        ],
+        "primary_theme": "2차전지",
+        "theme_leadership": "fast_follower"
+      },
+      "health_agent": {
+        "agent": "health_agent",
+        "ticker": "247540",
+        "score": 82.0,
+        "confidence": 0.9,
+        "reason": "건전성 veto 사유가 없습니다.",
+        "risk": "",
+        "evidence": [
+          {
+            "type": "market_cap",
+            "source": "mock_market_cap_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "financials",
+            "source": "mock_financial_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "disclosures",
+            "source": "mock_disclosure_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "financial_health": "strong",
+        "liquidity_status": "good",
+        "market_cap_krw": 11500000000000,
+        "disclosure_risk": "low",
+        "veto": false,
+        "veto_reason": ""
+      },
+      "trader_agent": {
+        "agent": "trader_agent",
+        "ticker": "247540",
+        "score": 80.0,
+        "confidence": 0.78,
+        "reason": "단기 이평선 부근에서 과열이 크지 않아 분할 접근이 가능합니다.",
+        "risk": "",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "intraday",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "trade_type": "swing",
+        "buy_plan": {
+          "first_buy": "227,556.0원 부근 1차",
+          "second_buy": "228,022.0원 부근 2차",
+          "third_buy": "227,148.0원 부근 3차 또는 지지 확인 후"
+        },
+        "sell_plan": {
+          "partial_sell_1": "239,904.0원 1차 분할매도",
+          "partial_sell_2": "249,043.0원 2차 분할매도",
+          "final_target": "260,467.0원 또는 거래량 climax"
+        },
+        "stop_loss": "223,740.64원 이탈",
+        "invalidation": "종가 기준 20일선 227,148.0원 이탈 또는 대량 음봉",
+        "risk_reward": 4.57
+      },
+      "breakout_agent": {
+        "agent": "breakout_agent",
+        "ticker": "247540",
+        "score": 75.08,
+        "confidence": 0.74,
+        "reason": "박스권 상단 또는 전고점에 근접해 돌파 확인 구간입니다.",
+        "risk": "저항 돌파 실패 시 윗꼬리 매물 출회 가능",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "breakout_level": 231603.47,
+        "nearest_resistance": 231603.47,
+        "volume_confirmation_needed": true,
+        "setup": "forming"
+      },
+      "pullback_agent": {
+        "agent": "pullback_agent",
+        "ticker": "247540",
+        "score": 76.0,
+        "confidence": 0.84,
+        "reason": "양음양 pattern_3 조건과 단기 지지 후보가 겹칩니다.",
+        "risk": "음봉 거래량 재증가 시 눌림 실패 가능",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "pullback_type": "yyang_eum_yyang",
+        "support_levels": [
+          227556.0,
+          228022.47,
+          227147.86
+        ],
+        "invalid_level": 224285.88,
+        "volume_dry_up": false,
+        "yyang_eum_yyang_candidate": true
+      },
+      "scalping_agent": {
+        "agent": "scalping_agent",
+        "ticker": "247540",
+        "score": 94.0,
+        "confidence": 0.7,
+        "reason": "거래대금 2,062.0억, 장중 거래량 195,535주 기준입니다.",
+        "risk": "실시간 호가/체결 강도 Provider 연결 전에는 단타 confidence 제한",
+        "evidence": [
+          {
+            "type": "intraday",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "news",
+            "source": "mock_news_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "daytrade_grade": "A",
+        "entry_trigger": "VWAP 228,387.0원 회복 후 직전 분봉 고점 돌파",
+        "exit_trigger": "VWAP 재이탈 또는 3분봉 장대음봉",
+        "max_holding_time": "당일 종가 전 청산"
+      },
+      "volume_flow_agent": {
+        "agent": "volume_flow_agent",
+        "ticker": "247540",
+        "score": 80.0,
+        "confidence": 0.76,
+        "reason": "20일 평균 대비 거래량 배율은 0.62배입니다.",
+        "risk": "",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "supply_demand",
+            "source": "mock_volume_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "volume_status": "dry_up",
+        "supply_demand": {
+          "foreign": "neutral",
+          "institution": "net_buy",
+          "retail": "net_sell",
+          "program": "neutral"
+        },
+        "key_volume_levels": [
+          {
+            "level": 228480.0,
+            "description": "latest close"
+          },
+          {
+            "level": 231603.47,
+            "description": "20d high"
+          }
+        ]
+      },
+      "custom_doc_agent": {
+        "agent": "custom_doc_agent",
+        "ticker": "247540",
+        "score": 84.0,
+        "confidence": 0.84,
+        "reason": "문서 기반 양음양 pattern_3 규칙과 가격/거래량 구조가 부합합니다.",
+        "risk": "거래량 재증가 음봉 또는 단기 이평선 이탈 시 제외",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "strategy_doc",
+            "path": "C:\\Users\\guswl\\OneDrive\\문서\\New project\\stock_picker_agents\\data\\custom_docs\\yyang_eum_yyang.pdf"
+          }
+        ],
+        "strategy_doc": "yyang_eum_yyang",
+        "matched_pattern": "pattern_3",
+        "matched_rules": [
+          "prior_bullish_candle_5_to_20",
+          "volume_contraction",
+          "sideways_after_bullish_candle",
+          "sideways_above_short_ma"
+        ],
+        "violated_rules": [],
+        "entry_zone_from_doc": "5일선 227,556.0원 / 10일선 228,022.0원 부근 다분할",
+        "invalid_level_from_doc": 224285.88,
+        "conflicts": []
+      }
+    },
+    "010120": {
+      "rs_agent": {
+        "agent": "rs_agent",
+        "ticker": "010120",
+        "score": 53.75,
+        "confidence": 0.9,
+        "reason": "KOSPI 대비 RS 5/10/20일이 8.25/-5.39/-4.26%p입니다.",
+        "risk": "시장 대비 우위가 약하거나 구간별 편차가 있습니다.",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "benchmark",
+            "source": "mock_market_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "market_cap",
+            "source": "mock_market_cap_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "market_cap_krw": 7200000000000,
+        "passed_market_cap_filter": true,
+        "rs_rank": 6,
+        "rs_percentile": 28.57,
+        "rs_5d": 8.25,
+        "rs_10d": -5.39,
+        "rs_20d": -4.26,
+        "rs_60d": 5.16,
+        "rs_line_trend": "flat",
+        "market_outperformance": false,
+        "sector_outperformance": false,
+        "squeeze_candidate_by_rs": false,
+        "name": "LS ELECTRIC"
+      },
+      "theme_agent": {
+        "agent": "theme_agent",
+        "ticker": "010120",
+        "score": 93.33,
+        "confidence": 0.82,
+        "reason": "전력기기 중심으로 3개 테마가 연결됩니다.",
+        "risk": "",
+        "evidence": [
+          {
+            "type": "themes",
+            "source": "mock_theme_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "news",
+            "source": "mock_news_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "themes": [
+          {
+            "name": "전력기기",
+            "strength": 92.0,
+            "stage": "expanding",
+            "catalyst": "전력망 투자",
+            "evidence": [
+              "북미 전력망 투자 수혜 기대",
+              "전력기기 수주잔고 증가"
+            ]
+          },
+          {
+            "name": "변압기",
+            "strength": 86.0,
+            "stage": "expanding",
+            "catalyst": "북미 인프라 수주",
+            "evidence": [
+              "북미 전력망 투자 수혜 기대",
+              "전력기기 수주잔고 증가"
+            ]
+          },
+          {
+            "name": "AI 전력",
+            "strength": 82.0,
+            "stage": "early",
+            "catalyst": "데이터센터 전력 수요",
+            "evidence": [
+              "북미 전력망 투자 수혜 기대",
+              "전력기기 수주잔고 증가"
+            ]
+          }
+        ],
+        "primary_theme": "전력기기",
+        "theme_leadership": "leader"
+      },
+      "health_agent": {
+        "agent": "health_agent",
+        "ticker": "010120",
+        "score": 82.0,
+        "confidence": 0.9,
+        "reason": "건전성 veto 사유가 없습니다.",
+        "risk": "",
+        "evidence": [
+          {
+            "type": "market_cap",
+            "source": "mock_market_cap_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "financials",
+            "source": "mock_financial_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "disclosures",
+            "source": "mock_disclosure_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "financial_health": "strong",
+        "liquidity_status": "good",
+        "market_cap_krw": 7200000000000,
+        "disclosure_risk": "low",
+        "veto": false,
+        "veto_reason": ""
+      },
+      "trader_agent": {
+        "agent": "trader_agent",
+        "ticker": "010120",
+        "score": 64.0,
+        "confidence": 0.78,
+        "reason": "자리는 나쁘지 않지만 명확한 진입 트리거가 더 필요합니다.",
+        "risk": "",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "intraday",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "trade_type": "watch_only",
+        "buy_plan": {
+          "first_buy": "131,750.0원 부근 1차",
+          "second_buy": "136,431.0원 부근 2차",
+          "third_buy": "138,998.0원 부근 3차 또는 지지 확인 후"
+        },
+        "sell_plan": {
+          "partial_sell_1": "143,062.0원 1차 분할매도",
+          "partial_sell_2": "148,512.0원 2차 분할매도",
+          "final_target": "155,325.0원 또는 거래량 climax"
+        },
+        "stop_loss": "134,384.14원 이탈",
+        "invalidation": "종가 기준 20일선 138,998.0원 이탈 또는 대량 음봉",
+        "risk_reward": 12.02
+      },
+      "breakout_agent": {
+        "agent": "breakout_agent",
+        "ticker": "010120",
+        "score": 45.0,
+        "confidence": 0.74,
+        "reason": "저항까지 거리가 있거나 돌파 거래량이 부족합니다.",
+        "risk": "저항 돌파 실패 시 윗꼬리 매물 출회 가능",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "breakout_level": 146921.07,
+        "nearest_resistance": 146921.07,
+        "volume_confirmation_needed": false,
+        "setup": "failed"
+      },
+      "pullback_agent": {
+        "agent": "pullback_agent",
+        "ticker": "010120",
+        "score": 84.0,
+        "confidence": 0.88,
+        "reason": "양음양 pattern_1 조건과 단기 지지 후보가 겹칩니다.",
+        "risk": "음봉 거래량 재증가 시 눌림 실패 가능",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "pullback_type": "yyang_eum_yyang",
+        "support_levels": [
+          131750.0,
+          136430.6,
+          138997.79
+        ],
+        "invalid_level": 131750.0,
+        "volume_dry_up": true,
+        "yyang_eum_yyang_candidate": true
+      },
+      "scalping_agent": {
+        "agent": "scalping_agent",
+        "ticker": "010120",
+        "score": 94.0,
+        "confidence": 0.7,
+        "reason": "거래대금 2,547.9억, 장중 거래량 405,155주 기준입니다.",
+        "risk": "실시간 호가/체결 강도 Provider 연결 전에는 단타 confidence 제한",
+        "evidence": [
+          {
+            "type": "intraday",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "news",
+            "source": "mock_news_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "daytrade_grade": "A",
+        "entry_trigger": "VWAP 136,194.0원 회복 후 직전 분봉 고점 돌파",
+        "exit_trigger": "VWAP 재이탈 또는 3분봉 장대음봉",
+        "max_holding_time": "당일 종가 전 청산"
+      },
+      "volume_flow_agent": {
+        "agent": "volume_flow_agent",
+        "ticker": "010120",
+        "score": 50.0,
+        "confidence": 0.76,
+        "reason": "20일 평균 대비 거래량 배율은 1.70배입니다.",
+        "risk": "분배 신호에서는 돌파보다 매물 소화 확인 필요",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "supply_demand",
+            "source": "mock_volume_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "volume_status": "distribution",
+        "supply_demand": {
+          "foreign": "net_buy",
+          "institution": "net_buy_strong",
+          "retail": "net_sell",
+          "program": "neutral"
+        },
+        "key_volume_levels": [
+          {
+            "level": 136250.0,
+            "description": "latest close"
+          },
+          {
+            "level": 146921.07,
+            "description": "20d high"
+          }
+        ]
+      },
+      "custom_doc_agent": {
+        "agent": "custom_doc_agent",
+        "ticker": "010120",
+        "score": 88.0,
+        "confidence": 0.86,
+        "reason": "문서 기반 양음양 pattern_1 규칙과 가격/거래량 구조가 부합합니다.",
+        "risk": "거래량 재증가 음봉 또는 단기 이평선 이탈 시 제외",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "strategy_doc",
+            "path": "C:\\Users\\guswl\\OneDrive\\문서\\New project\\stock_picker_agents\\data\\custom_docs\\yyang_eum_yyang.pdf"
+          }
+        ],
+        "strategy_doc": "yyang_eum_yyang",
+        "matched_pattern": "pattern_1",
+        "matched_rules": [
+          "bullish_candle_5_to_20_or_upper_shadow",
+          "next_day_bearish_candle",
+          "next_day_holds_ma5",
+          "bearish_volume_under_60pct",
+          "short_ma_within_5pct"
+        ],
+        "violated_rules": [],
+        "entry_zone_from_doc": "전일 저점 125,625.0원 또는 5일선 131,750.0원 부근 분할매수",
+        "invalid_level_from_doc": 131750.0,
+        "conflicts": []
+      }
+    },
+    "035420": {
+      "rs_agent": {
+        "agent": "rs_agent",
+        "ticker": "035420",
+        "score": 52.12,
+        "confidence": 0.9,
+        "reason": "KOSPI 대비 RS 5/10/20일이 0.20/-0.01/-0.92%p입니다.",
+        "risk": "시장 대비 우위가 약하거나 구간별 편차가 있습니다.",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "benchmark",
+            "source": "mock_market_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "market_cap",
+            "source": "mock_market_cap_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "market_cap_krw": 32000000000000,
+        "passed_market_cap_filter": true,
+        "rs_rank": 7,
+        "rs_percentile": 14.29,
+        "rs_5d": 0.2,
+        "rs_10d": -0.01,
+        "rs_20d": -0.92,
+        "rs_60d": -3.1,
+        "rs_line_trend": "flat",
+        "market_outperformance": false,
+        "sector_outperformance": false,
+        "squeeze_candidate_by_rs": false,
+        "name": "NAVER"
+      },
+      "theme_agent": {
+        "agent": "theme_agent",
+        "ticker": "035420",
+        "score": 66.0,
+        "confidence": 0.82,
+        "reason": "AI검색 중심으로 3개 테마가 연결됩니다.",
+        "risk": "",
+        "evidence": [
+          {
+            "type": "themes",
+            "source": "mock_theme_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "news",
+            "source": "mock_news_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "themes": [
+          {
+            "name": "AI검색",
+            "strength": 67.0,
+            "stage": "early",
+            "catalyst": "검색 개편",
+            "evidence": [
+              "AI 검색 서비스 개편",
+              "광고 경기 회복 기대"
+            ]
+          },
+          {
+            "name": "플랫폼",
+            "strength": 61.0,
+            "stage": "early",
+            "catalyst": "광고 회복",
+            "evidence": [
+              "AI 검색 서비스 개편",
+              "광고 경기 회복 기대"
+            ]
+          },
+          {
+            "name": "커머스",
+            "strength": 58.0,
+            "stage": "early",
+            "catalyst": "수수료 개선",
+            "evidence": [
+              "AI 검색 서비스 개편",
+              "광고 경기 회복 기대"
+            ]
+          }
+        ],
+        "primary_theme": "AI검색",
+        "theme_leadership": "laggard"
+      },
+      "health_agent": {
+        "agent": "health_agent",
+        "ticker": "035420",
+        "score": 82.0,
+        "confidence": 0.9,
+        "reason": "건전성 veto 사유가 없습니다.",
+        "risk": "",
+        "evidence": [
+          {
+            "type": "market_cap",
+            "source": "mock_market_cap_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "financials",
+            "source": "mock_financial_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "disclosures",
+            "source": "mock_disclosure_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "financial_health": "strong",
+        "liquidity_status": "good",
+        "market_cap_krw": 32000000000000,
+        "disclosure_risk": "low",
+        "veto": false,
+        "veto_reason": ""
+      },
+      "trader_agent": {
+        "agent": "trader_agent",
+        "ticker": "035420",
+        "score": 80.0,
+        "confidence": 0.78,
+        "reason": "단기 이평선 부근에서 과열이 크지 않아 분할 접근이 가능합니다.",
+        "risk": "",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "intraday",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "trade_type": "swing",
+        "buy_plan": {
+          "first_buy": "192,033.0원 부근 1차",
+          "second_buy": "192,238.0원 부근 2차",
+          "third_buy": "192,169.0원 부근 3차 또는 지지 확인 후"
+        },
+        "sell_plan": {
+          "partial_sell_1": "203,208.0원 1차 분할매도",
+          "partial_sell_2": "210,949.0원 2차 분할매도",
+          "final_target": "220,626.0원 또는 거래량 climax"
+        },
+        "stop_loss": "189,285.99원 이탈",
+        "invalidation": "종가 기준 20일선 192,169.0원 이탈 또는 대량 음봉",
+        "risk_reward": 3.72
+      },
+      "breakout_agent": {
+        "agent": "breakout_agent",
+        "ticker": "035420",
+        "score": 77.83,
+        "confidence": 0.74,
+        "reason": "박스권 상단 또는 전고점에 근접해 돌파 확인 구간입니다.",
+        "risk": "저항 돌파 실패 시 윗꼬리 매물 출회 가능",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "breakout_level": 193824.13,
+        "nearest_resistance": 193824.13,
+        "volume_confirmation_needed": true,
+        "setup": "forming"
+      },
+      "pullback_agent": {
+        "agent": "pullback_agent",
+        "ticker": "035420",
+        "score": 62.0,
+        "confidence": 0.62,
+        "reason": "20일선 위에서 버티지만 거래량 감소 신호는 제한적입니다.",
+        "risk": "음봉 거래량 재증가 시 눌림 실패 가능",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "pullback_type": "box_support",
+        "support_levels": [
+          192033.15,
+          192238.19,
+          192168.52
+        ],
+        "invalid_level": 189285.99,
+        "volume_dry_up": false,
+        "yyang_eum_yyang_candidate": false
+      },
+      "scalping_agent": {
+        "agent": "scalping_agent",
+        "ticker": "035420",
+        "score": 94.0,
+        "confidence": 0.7,
+        "reason": "거래대금 1,455.3억, 장중 거래량 162,915주 기준입니다.",
+        "risk": "실시간 호가/체결 강도 Provider 연결 전에는 단타 confidence 제한",
+        "evidence": [
+          {
+            "type": "intraday",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "news",
+            "source": "mock_news_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "daytrade_grade": "A",
+        "entry_trigger": "VWAP 193,452.0원 회복 후 직전 분봉 고점 돌파",
+        "exit_trigger": "VWAP 재이탈 또는 3분봉 장대음봉",
+        "max_holding_time": "당일 종가 전 청산"
+      },
+      "volume_flow_agent": {
+        "agent": "volume_flow_agent",
+        "ticker": "035420",
+        "score": 62.0,
+        "confidence": 0.76,
+        "reason": "20일 평균 대비 거래량 배율은 1.17배입니다.",
+        "risk": "",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "supply_demand",
+            "source": "mock_volume_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "volume_status": "neutral",
+        "supply_demand": {
+          "foreign": "neutral",
+          "institution": "net_sell",
+          "retail": "net_buy",
+          "program": "neutral"
+        },
+        "key_volume_levels": [
+          {
+            "level": 193531.27,
+            "description": "latest close"
+          },
+          {
+            "level": 193824.13,
+            "description": "20d high"
+          }
+        ]
+      },
+      "custom_doc_agent": {
+        "agent": "custom_doc_agent",
+        "ticker": "035420",
+        "score": 42.0,
+        "confidence": 0.55,
+        "reason": "양음양 문서 규칙에 명확히 부합하지 않습니다.",
+        "risk": "문서 기반 전략 가점 없음",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "strategy_doc",
+            "path": "C:\\Users\\guswl\\OneDrive\\문서\\New project\\stock_picker_agents\\data\\custom_docs\\yyang_eum_yyang.pdf"
+          }
+        ],
+        "strategy_doc": "yyang_eum_yyang",
+        "matched_pattern": "none",
+        "matched_rules": [],
+        "violated_rules": [
+          "bullish_candle_range",
+          "next_day_is_not_bearish",
+          "breaks_ma5",
+          "bearish_volume_too_high",
+          "volume_not_high_enough",
+          "next_day_not_below_prev_close",
+          "breaks_ma5_ma10",
+          "no_prior_bullish_candle",
+          "volume_not_contracting"
+        ],
+        "entry_zone_from_doc": "",
+        "invalid_level_from_doc": null,
+        "conflicts": []
+      }
+    },
+    "042700": {
+      "rs_agent": {
+        "agent": "rs_agent",
+        "ticker": "042700",
+        "score": 41.07,
+        "confidence": 0.9,
+        "reason": "KOSPI 대비 RS 5/10/20일이 3.21/-9.23/-8.47%p입니다.",
+        "risk": "시장 대비 우위가 약하거나 구간별 편차가 있습니다.",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "benchmark",
+            "source": "mock_market_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "market_cap",
+            "source": "mock_market_cap_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "market_cap_krw": 14000000000000,
+        "passed_market_cap_filter": true,
+        "rs_rank": 8,
+        "rs_percentile": 0.0,
+        "rs_5d": 3.21,
+        "rs_10d": -9.23,
+        "rs_20d": -8.47,
+        "rs_60d": 2.16,
+        "rs_line_trend": "flat",
+        "market_outperformance": false,
+        "sector_outperformance": false,
+        "squeeze_candidate_by_rs": false,
+        "name": "한미반도체"
+      },
+      "theme_agent": {
+        "agent": "theme_agent",
+        "ticker": "042700",
+        "score": 94.33,
+        "confidence": 0.82,
+        "reason": "HBM 장비 중심으로 3개 테마가 연결됩니다.",
+        "risk": "crowded 단계 테마는 장중 변동성 확대 가능",
+        "evidence": [
+          {
+            "type": "themes",
+            "source": "mock_theme_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "news",
+            "source": "mock_news_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "themes": [
+          {
+            "name": "HBM 장비",
+            "strength": 95.0,
+            "stage": "crowded",
+            "catalyst": "TC 본더 수요",
+            "evidence": [
+              "HBM 장비 수주 기대감 지속",
+              "반도체 장비주 강세"
+            ]
+          },
+          {
+            "name": "반도체 장비",
+            "strength": 90.0,
+            "stage": "expanding",
+            "catalyst": "설비투자 확대",
+            "evidence": [
+              "HBM 장비 수주 기대감 지속",
+              "반도체 장비주 강세"
+            ]
+          },
+          {
+            "name": "AI 반도체",
+            "strength": 84.0,
+            "stage": "expanding",
+            "catalyst": "패키징 병목",
+            "evidence": [
+              "HBM 장비 수주 기대감 지속",
+              "반도체 장비주 강세"
+            ]
+          }
+        ],
+        "primary_theme": "HBM 장비",
+        "theme_leadership": "leader"
+      },
+      "health_agent": {
+        "agent": "health_agent",
+        "ticker": "042700",
+        "score": 82.0,
+        "confidence": 0.9,
+        "reason": "건전성 veto 사유가 없습니다.",
+        "risk": "",
+        "evidence": [
+          {
+            "type": "market_cap",
+            "source": "mock_market_cap_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "financials",
+            "source": "mock_financial_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "disclosures",
+            "source": "mock_disclosure_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "financial_health": "strong",
+        "liquidity_status": "good",
+        "market_cap_krw": 14000000000000,
+        "disclosure_risk": "low",
+        "veto": false,
+        "veto_reason": ""
+      },
+      "trader_agent": {
+        "agent": "trader_agent",
+        "ticker": "042700",
+        "score": 80.0,
+        "confidence": 0.78,
+        "reason": "단기 이평선 부근에서 과열이 크지 않아 분할 접근이 가능합니다.",
+        "risk": "",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "intraday",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "trade_type": "swing",
+        "buy_plan": {
+          "first_buy": "140,940.0원 부근 1차",
+          "second_buy": "145,099.0원 부근 2차",
+          "third_buy": "149,414.0원 부근 3차 또는 지지 확인 후"
+        },
+        "sell_plan": {
+          "partial_sell_1": "148,838.0원 1차 분할매도",
+          "partial_sell_2": "154,508.0원 2차 분할매도",
+          "final_target": "161,595.0원 또는 거래량 climax"
+        },
+        "stop_loss": "142,922.98원 이탈",
+        "invalidation": "종가 기준 20일선 149,414.0원 이탈 또는 대량 음봉",
+        "risk_reward": 22.89
+      },
+      "breakout_agent": {
+        "agent": "breakout_agent",
+        "ticker": "042700",
+        "score": 45.0,
+        "confidence": 0.74,
+        "reason": "저항까지 거리가 있거나 돌파 거래량이 부족합니다.",
+        "risk": "저항 돌파 실패 시 윗꼬리 매물 출회 가능",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "breakout_level": 161289.36,
+        "nearest_resistance": 161289.36,
+        "volume_confirmation_needed": true,
+        "setup": "failed"
+      },
+      "pullback_agent": {
+        "agent": "pullback_agent",
+        "ticker": "042700",
+        "score": 84.0,
+        "confidence": 0.82,
+        "reason": "양음양 pattern_2 조건과 단기 지지 후보가 겹칩니다.",
+        "risk": "음봉 거래량 재증가 시 눌림 실패 가능",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "pullback_type": "yyang_eum_yyang",
+        "support_levels": [
+          140940.0,
+          145099.48,
+          149413.71
+        ],
+        "invalid_level": 140940.0,
+        "volume_dry_up": true,
+        "yyang_eum_yyang_candidate": true
+      },
+      "scalping_agent": {
+        "agent": "scalping_agent",
+        "ticker": "042700",
+        "score": 94.0,
+        "confidence": 0.7,
+        "reason": "거래대금 4,578.5억, 장중 거래량 699,820주 기준입니다.",
+        "risk": "실시간 호가/체결 강도 Provider 연결 전에는 단타 confidence 제한",
+        "evidence": [
+          {
+            "type": "intraday",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "news",
+            "source": "mock_news_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "daytrade_grade": "A",
+        "entry_trigger": "VWAP 141,692.0원 회복 후 직전 분봉 고점 돌파",
+        "exit_trigger": "VWAP 재이탈 또는 3분봉 장대음봉",
+        "max_holding_time": "당일 종가 전 청산"
+      },
+      "volume_flow_agent": {
+        "agent": "volume_flow_agent",
+        "ticker": "042700",
+        "score": 70.0,
+        "confidence": 0.76,
+        "reason": "20일 평균 대비 거래량 배율은 1.31배입니다.",
+        "risk": "",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "supply_demand",
+            "source": "mock_volume_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          }
+        ],
+        "volume_status": "neutral",
+        "supply_demand": {
+          "foreign": "net_buy",
+          "institution": "neutral",
+          "retail": "net_sell",
+          "program": "net_buy"
+        },
+        "key_volume_levels": [
+          {
+            "level": 141750.0,
+            "description": "latest close"
+          },
+          {
+            "level": 161289.36,
+            "description": "20d high"
+          }
+        ]
+      },
+      "custom_doc_agent": {
+        "agent": "custom_doc_agent",
+        "ticker": "042700",
+        "score": 76.0,
+        "confidence": 0.82,
+        "reason": "문서 기반 양음양 pattern_2 규칙과 가격/거래량 구조가 부합합니다.",
+        "risk": "거래량 재증가 음봉 또는 단기 이평선 이탈 시 제외",
+        "evidence": [
+          {
+            "type": "ohlcv",
+            "source": "mock_price_provider",
+            "fetched_at_kst": "2026-05-02T01:24:00+09:00",
+            "is_stale": false
+          },
+          {
+            "type": "strategy_doc",
+            "path": "C:\\Users\\guswl\\OneDrive\\문서\\New project\\stock_picker_agents\\data\\custom_docs\\yyang_eum_yyang.pdf"
+          }
+        ],
+        "strategy_doc": "yyang_eum_yyang",
+        "matched_pattern": "pattern_2",
+        "matched_rules": [
+          "long_upper_shadow",
+          "high_volume_bullish_candle",
+          "next_day_below_prev_close",
+          "holds_ma5_ma10"
+        ],
+        "violated_rules": [],
+        "entry_zone_from_doc": "시초가 아래 또는 5/10일선 140,940.0원 부근에서 실시간 분할매수",
+        "invalid_level_from_doc": 140940.0,
+        "conflicts": []
+      }
+    }
+  }
+}

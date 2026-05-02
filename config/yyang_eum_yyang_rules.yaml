@@ -1,0 +1,21 @@
+pattern_1:
+  bullish_candle_min_pct: 5
+  bullish_candle_max_pct: 20
+  next_day_must_hold_ma5: true
+  bearish_volume_max_ratio_to_prev_bullish: 0.60
+  short_ma_distance_max_pct: 5
+pattern_2:
+  require_long_upper_shadow: true
+  require_high_volume_bullish_candle: true
+  buy_near_short_ma_next_day: true
+  fail_if_breaks_ma5_ma10: true
+pattern_3:
+  bullish_candle_min_pct: 5
+  bullish_candle_max_pct: 20
+  require_volume_contraction: true
+  require_sideways_above_short_ma: true
+  buy_near_ma5_ma10: true
+risk_rules:
+  avoid_high_volume_bearish_candle: true
+  invalid_if_breaks_volume_contraction_day_low: true
+  prefer_theme_or_news_momentum: true

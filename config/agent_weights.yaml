@@ -1,0 +1,9 @@
+rs_agent: 0.20
+theme_agent: 0.12
+health_agent: 0.15
+trader_agent: 0.13
+breakout_agent: 0.08
+pullback_agent: 0.10
+scalping_agent: 0.05
+volume_flow_agent: 0.12
+custom_doc_agent: 0.05
